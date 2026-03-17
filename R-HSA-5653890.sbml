@@ -1,0 +1,981 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" layout:required="false" level="3" version="1" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1">
+  <notes>
+    <annotation>
+      <p xmlns="http://www.w3.org/1999/xhtml">SBML generated from Reactome version 95 on 12/10/25, 9:11 AM using JSBML version 1.5.</p>
+    </annotation>
+  </notes>
+  <model id="pathway_5653890" metaid="metaid_0" name="Lactose synthesis">
+    <notes>
+      <p xmlns="http://www.w3.org/1999/xhtml">Synthesis of the disaccharide lactose takes place within the Golgi apparatus of epithelial cells of the lactating mammary gland. The synthesis itself is a single chemical reaction of free glucose and UDP-galactose to form lactose and UDP. For this reaction to occur, glucose is transported from the cytosol into the Golgi lumen, and B4GALT1 interacts with LALBA (alpha-lactalbumin) to modulate its substrate specificity (Brew and Hill 1975).</p>
+    </notes>
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+        <rdf:Description rdf:about="#metaid_0">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>D'Eustachio</vCard:Family>
+                  <vCard:Given>Peter</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>NYU School of Medicine, Department of Biochemistry</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Weiser</vCard:Family>
+                  <vCard:Given>Joel</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>OICR</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2014-12-02T23:47:16Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2025-11-15T09:17:55Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653890" />
+              <rdf:li rdf:resource="https://identifiers.org/GO:0005989" />
+            </rdf:Bag>
+          </bqbiol:is>
+          <bqbiol:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:806951" />
+            </rdf:Bag>
+          </bqbiol:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <layout:listOfLayouts xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <layout:layout>
+        <layout:listOfCompartmentGlyphs>
+          <layout:compartmentGlyph layout:compartment="compartment_70101" layout:id="layout_7">
+            <layout:boundingBox>
+              <layout:position layout:x="20" layout:y="21" />
+              <layout:dimensions layout:height="464" layout:width="387" />
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="compartment_17963" layout:id="layout_1131">
+            <layout:boundingBox>
+              <layout:position layout:x="117" layout:y="101" />
+              <layout:dimensions layout:height="360" layout:width="193" />
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="compartment_20699" layout:id="layout_hidden_compartment_0">
+            <layout:boundingBox>
+              <layout:position layout:x="213" layout:y="485" />
+              <layout:dimensions layout:height="1" layout:width="1" />
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+        </layout:listOfCompartmentGlyphs>
+        <layout:listOfSpeciesGlyphs>
+          <layout:speciesGlyph layout:id="layout_1139" layout:species="species_964746">
+            <layout:boundingBox>
+              <layout:position layout:x="245" layout:y="144" />
+              <layout:dimensions layout:height="30" layout:width="37" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1140" layout:species="species_5653881">
+            <layout:boundingBox>
+              <layout:position layout:x="109" layout:y="95" />
+              <layout:dimensions layout:height="22" layout:width="115" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1142" layout:species="species_70113">
+            <layout:boundingBox>
+              <layout:position layout:x="244" layout:y="47" />
+              <layout:dimensions layout:height="30" layout:width="37" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1150" layout:species="species_528072">
+            <layout:boundingBox>
+              <layout:position layout:x="89" layout:y="167" />
+              <layout:dimensions layout:height="22" layout:width="66" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1151" layout:species="species_5653896">
+            <layout:boundingBox>
+              <layout:position layout:x="170" layout:y="172" />
+              <layout:dimensions layout:height="22" layout:width="49" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1152" layout:species="species_5653885">
+            <layout:boundingBox>
+              <layout:position layout:x="67" layout:y="301" />
+              <layout:dimensions layout:height="22" layout:width="111" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1153" layout:species="species_735682">
+            <layout:boundingBox>
+              <layout:position layout:x="180" layout:y="222" />
+              <layout:dimensions layout:height="30" layout:width="70" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1154" layout:species="species_5653875">
+            <layout:boundingBox>
+              <layout:position layout:x="160" layout:y="261" />
+              <layout:dimensions layout:height="30" layout:width="53" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1159" layout:species="species_205687">
+            <layout:boundingBox>
+              <layout:position layout:x="168" layout:y="363" />
+              <layout:dimensions layout:height="30" layout:width="41" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1160" layout:species="species_5653871">
+            <layout:boundingBox>
+              <layout:position layout:x="242" layout:y="406" />
+              <layout:dimensions layout:height="30" layout:width="41" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="layout_1167" layout:species="species_425969">
+            <layout:boundingBox>
+              <layout:position layout:x="193" layout:y="399" />
+              <layout:dimensions layout:height="31" layout:width="36" />
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+        </layout:listOfSpeciesGlyphs>
+        <layout:listOfReactionGlyphs>
+          <layout:reactionGlyph layout:id="layout_1138" layout:reaction="reaction_5653873">
+            <layout:boundingBox>
+              <layout:position layout:x="255" layout:y="100" />
+              <layout:dimensions layout:height="12" layout:width="12" />
+            </layout:boundingBox>
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="261" layout:y="93" />
+                  <layout:end layout:x="261" layout:y="106" />
+                </layout:curveSegment>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="261" layout:y="106" />
+                  <layout:end layout:x="261" layout:y="123" />
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="layout_1138_substrate_0" layout:speciesGlyph="layout_1142">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="261" layout:y="93" />
+                      <layout:end layout:x="261" layout:y="80" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1138_product_0" layout:speciesGlyph="layout_1139">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="261" layout:y="123" />
+                      <layout:end layout:x="262" layout:y="141" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1138_modifier_0" layout:speciesGlyph="layout_1140">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="227" layout:y="106" />
+                      <layout:end layout:x="261" layout:y="106" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+          <layout:reactionGlyph layout:id="layout_1149" layout:reaction="reaction_5653886">
+            <layout:boundingBox>
+              <layout:position layout:x="116" layout:y="246" />
+              <layout:dimensions layout:height="12" layout:width="12" />
+            </layout:boundingBox>
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="122" layout:y="218" />
+                  <layout:end layout:x="122" layout:y="252" />
+                </layout:curveSegment>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="122" layout:y="252" />
+                  <layout:end layout:x="122" layout:y="275" />
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="layout_1149_substrate_0" layout:speciesGlyph="layout_1150">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="122" layout:y="218" />
+                      <layout:end layout:x="122" layout:y="192" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1149_substrate_1" layout:speciesGlyph="layout_1151">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="122" layout:y="218" />
+                      <layout:end layout:x="171" layout:y="197" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1149_product_0" layout:speciesGlyph="layout_1152">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="122" layout:y="275" />
+                      <layout:end layout:x="122" layout:y="298" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1149_modifier_0" layout:speciesGlyph="layout_1151">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="182" layout:y="197" />
+                      <layout:end layout:x="122" layout:y="252" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1149_activator_0" layout:speciesGlyph="layout_1153">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="177" layout:y="242" />
+                      <layout:end layout:x="122" layout:y="252" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1149_activator_1" layout:speciesGlyph="layout_1154">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="157" layout:y="266" />
+                      <layout:end layout:x="122" layout:y="252" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+          <layout:reactionGlyph layout:id="layout_1158" layout:reaction="reaction_5653878">
+            <layout:boundingBox>
+              <layout:position layout:x="257" layout:y="306" />
+              <layout:dimensions layout:height="12" layout:width="12" />
+            </layout:boundingBox>
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="263" layout:y="267" />
+                  <layout:end layout:x="263" layout:y="312" />
+                </layout:curveSegment>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="263" layout:y="312" />
+                  <layout:end layout:x="263" layout:y="344" />
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="layout_1158_substrate_0" layout:speciesGlyph="layout_1153">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="263" layout:y="267" />
+                      <layout:end layout:x="239" layout:y="255" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1158_substrate_1" layout:speciesGlyph="layout_1139">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="263" layout:y="267" />
+                      <layout:end layout:x="263" layout:y="177" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1158_product_0" layout:speciesGlyph="layout_1167">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="263" layout:y="344" />
+                      <layout:end layout:x="222" layout:y="396" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1158_product_1" layout:speciesGlyph="layout_1160">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="263" layout:y="344" />
+                      <layout:end layout:x="262" layout:y="403" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1158_product_2" layout:speciesGlyph="layout_1159">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="263" layout:y="344" />
+                      <layout:end layout:x="212" layout:y="368" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="layout_1158_modifier_0" layout:speciesGlyph="layout_1152">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="181" layout:y="312" />
+                      <layout:end layout:x="263" layout:y="312" />
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+        </layout:listOfReactionGlyphs>
+        <layout:listOfTextGlyphs>
+          <layout:textGlyph layout:graphicalObject="layout_7" layout:id="text_layout_7" layout:text="cytosol">
+            <layout:boundingBox>
+              <layout:position layout:x="41" layout:y="39" />
+              <layout:dimensions layout:height="33" layout:width="64" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1131" layout:id="text_layout_1131" layout:text="Golgi lumen">
+            <layout:boundingBox>
+              <layout:position layout:x="129" layout:y="322" />
+              <layout:dimensions layout:height="33" layout:width="93" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1139" layout:id="text_layout_1139" layout:text="Glc">
+            <layout:boundingBox>
+              <layout:position layout:x="250" layout:y="148" />
+              <layout:dimensions layout:height="21" layout:width="27" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1140" layout:id="text_layout_1140" layout:text="SLC2A1 tetramer">
+            <layout:boundingBox>
+              <layout:position layout:x="110" layout:y="96" />
+              <layout:dimensions layout:height="21" layout:width="113" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1142" layout:id="text_layout_1142" layout:text="Glc">
+            <layout:boundingBox>
+              <layout:position layout:x="249" layout:y="51" />
+              <layout:dimensions layout:height="21" layout:width="27" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1150" layout:id="text_layout_1150" layout:text="B4GALT1">
+            <layout:boundingBox>
+              <layout:position layout:x="91" layout:y="167" />
+              <layout:dimensions layout:height="21" layout:width="62" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1151" layout:id="text_layout_1151" layout:text="LALBA">
+            <layout:boundingBox>
+              <layout:position layout:x="172" layout:y="172" />
+              <layout:dimensions layout:height="21" layout:width="44" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1152" layout:id="text_layout_1152" layout:text="B4GALT1:LALBA">
+            <layout:boundingBox>
+              <layout:position layout:x="71" layout:y="302" />
+              <layout:dimensions layout:height="21" layout:width="102" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1153" layout:id="text_layout_1153" layout:text="UDP-Gal">
+            <layout:boundingBox>
+              <layout:position layout:x="186" layout:y="226" />
+              <layout:dimensions layout:height="21" layout:width="58" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1154" layout:id="text_layout_1154" layout:text="Mn2+">
+            <layout:boundingBox>
+              <layout:position layout:x="164" layout:y="265" />
+              <layout:dimensions layout:height="21" layout:width="44" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1159" layout:id="text_layout_1159" layout:text="UDP">
+            <layout:boundingBox>
+              <layout:position layout:x="171" layout:y="367" />
+              <layout:dimensions layout:height="21" layout:width="34" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1160" layout:id="text_layout_1160" layout:text="Lac">
+            <layout:boundingBox>
+              <layout:position layout:x="248" layout:y="410" />
+              <layout:dimensions layout:height="21" layout:width="29" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="layout_1167" layout:id="text_layout_1167" layout:text="H+">
+            <layout:boundingBox>
+              <layout:position layout:x="197" layout:y="404" />
+              <layout:dimensions layout:height="21" layout:width="27" />
+            </layout:boundingBox>
+          </layout:textGlyph>
+        </layout:listOfTextGlyphs>
+      </layout:layout>
+    </layout:listOfLayouts>
+    <listOfCompartments>
+      <compartment constant="true" id="compartment_17963" metaid="metaid_2" name="Golgi lumen" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_2">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005796" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment constant="true" id="compartment_20699" metaid="metaid_5" name="Golgi membrane" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_5">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0000139" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment constant="true" id="compartment_70101" metaid="metaid_9" name="cytosol" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_9">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005829" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_5653871" metaid="metaid_1" name="Lac [Golgi lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_1">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:17716" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-5653871" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_205687" metaid="metaid_3" name="UDP [Golgi lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_3">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:58223" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-205687" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_20699" constant="false" hasOnlySubstanceUnits="false" id="species_528072" metaid="metaid_4" name="B4GALT1 [Golgi membrane]" sboTerm="SBO:0000252">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_4">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P15291" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-528072" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-528072" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-528072" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-528072" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-528072" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-528072" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-528072" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-528072" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_964746" metaid="metaid_6" name="Glc [Golgi lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:4167" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-964746" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_735682" metaid="metaid_7" name="UDP-Gal [Golgi lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_7">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:66914" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-735682" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_70113" metaid="metaid_8" name="Glc [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_8">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:4167" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-70113" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_20699" constant="false" hasOnlySubstanceUnits="false" id="species_5653885" metaid="metaid_10" name="B4GALT1:LALBA [Golgi membrane]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P00709, P15291). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_10">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11947697" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11419947" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653885" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P00709" />
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P15291" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-5653885" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-5653885" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-5653885" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-5653885" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-5653885" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-5653885" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-5653885" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_425969" metaid="metaid_11" name="H+ [Golgi lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_11">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:15378" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-425969" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_20699" constant="false" hasOnlySubstanceUnits="false" id="species_5653881" metaid="metaid_12" name="SLC2A1 tetramer [Golgi membrane]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (4xP11166). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_12">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653881" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P11166" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-5653881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-PFA-5653881" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_5653896" metaid="metaid_13" name="LALBA [Golgi lumen]" sboTerm="SBO:0000252">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_13">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:5049057" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P00709" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653896" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-5653896" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-5653896" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-5653896" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-5653896" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-5653896" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-5653896" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-5653896" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_17963" constant="false" hasOnlySubstanceUnits="false" id="species_5653875" metaid="metaid_14" name="Mn2+ [Golgi lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_14">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:29035" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-5653875" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction compartment="compartment_17963" fast="false" id="reaction_5653878" metaid="metaid_15" name="B4GALT1:LALBA transfers Gal from UDP-Gal to Glc to form Lac" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">In the Golgi membrane, the B4GALT1 subunit of the B4GALT1:LALBA (beta-1,4-galactosyltransferase 1 : alpha-lactalbumin) complex catalyzes the transfer of galactose from UDP-galactose to free glucose to form galactose and UDP (Andrews 1970; Ramakrishnan and Qasba 2001). The representation here of a stable protein complex catalyzing the transformation of small molecule substrates provides a simplified view of the true reaction mechanism (Brew and Hill 1975), but is sufficient to identify the key participating molecules and their roles.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_15">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>D'Eustachio</vCard:Family>
+                      <vCard:Given>Peter</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>NYU School of Medicine, Department of Biochemistry</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Weiser</vCard:Family>
+                      <vCard:Given>Joel</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2014-12-02T23:47:16Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2025-11-15T02:57:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653878" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11947697" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:806951" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11419947" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653878" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004461" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:2.4.1.22" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqmodel:hasInstance>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.rhea-db.org/rhea/12405" />
+                </rdf:Bag>
+              </bqmodel:hasInstance>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_5653878_input_964746" sboTerm="SBO:0000010" species="species_964746" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5653878_input_735682" sboTerm="SBO:0000010" species="species_735682" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_5653878_output_205687" sboTerm="SBO:0000011" species="species_205687" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5653878_output_5653871" sboTerm="SBO:0000011" species="species_5653871" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5653878_output_425969" sboTerm="SBO:0000011" species="species_425969" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_5653878_catalyst_5653885" sboTerm="SBO:0000013" species="species_5653885" />
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_17963" fast="false" id="reaction_5653873" metaid="metaid_16" name="SLC2A1 tetramer transports Glc from cytosol to Golgi lumen" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">SLC2A1 (aka GLUT1) tetramer in the Golgi membrane mediates the facilitated diffusion of glucose from the cytosol into the Golgi lumen. SLC2A1, normally confined to the plasma membrane, is also abundant in the Golgi membranes of epithelial cells of the lactating mammary gland, as demonstrated experimentally in mice (Nemeth et al. 2000). It is not known how this physiological state-specific relocalization is regulated.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_16">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>D'Eustachio</vCard:Family>
+                      <vCard:Given>Peter</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>NYU School of Medicine, Department of Biochemistry</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Weiser</vCard:Family>
+                      <vCard:Given>Joel</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2014-12-02T23:47:16Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2025-11-15T09:17:55Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653873" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:10759149" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653873" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0055056" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqmodel:hasInstance>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.rhea-db.org/rhea/60376" />
+                </rdf:Bag>
+              </bqmodel:hasInstance>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_5653873_input_70113" sboTerm="SBO:0000010" species="species_70113" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_5653873_output_964746" sboTerm="SBO:0000011" species="species_964746" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_5653873_catalyst_5653881" sboTerm="SBO:0000013" species="species_5653881" />
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_17963" fast="false" id="reaction_5653886" metaid="metaid_17" name="B4GALT1 binds LALBA" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">B4GALT1 (beta-1,4-galactosyltransferase 1) in the Golgi membrane associates with LALBA (alpha-lactalbumin) to form a heterodimer. This binding reaction is positively regulated by Mn2+ ions and UDP-galactose. This heterodimer has been observed both in solution in vitro and in crystalline form (Andrews 1970; Ramakrishnan and Qasba 2001). The galactosyltransferase enzyme is found in the Golgi membrane of many cell types. LALBA is expressed specifically in the lactating mammary gland. Binding LALBA modulates the specificity of the galactosyltransferase enzyme. Alone, B4GALT1 transfers galactose moieties to glycolipids and N-linked oligosaccharides of glycoproteins. Complexed with LALBA, it transfers galactose to free glucose to form lactose (Brew and Hill 1975).</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_17">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>D'Eustachio</vCard:Family>
+                      <vCard:Given>Peter</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>NYU School of Medicine, Department of Biochemistry</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Weiser</vCard:Family>
+                      <vCard:Given>Joel</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2014-12-02T23:47:16Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2025-11-15T02:57:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653886" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11947697" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:806951" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11419947" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5653886" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0140767" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_5653886_input_528072" sboTerm="SBO:0000010" species="species_528072" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5653886_input_5653896" sboTerm="SBO:0000010" species="species_5653896" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_5653886_output_5653885" sboTerm="SBO:0000011" species="species_5653885" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_5653886_catalyst_5653896" sboTerm="SBO:0000013" species="species_5653896" />
+          <modifierSpeciesReference id="modifierspeciesreference_5653886_positiveregulator_735682" sboTerm="SBO:0000459" species="species_735682">
+            <notes>
+              <p xmlns="http://www.w3.org/1999/xhtml">This describes an Event/CatalystActivity that is positively regulated by the Regulator (e.g., allosteric activation)</p>
+            </notes>
+          </modifierSpeciesReference>
+          <modifierSpeciesReference id="modifierspeciesreference_5653886_positiveregulator_5653875" sboTerm="SBO:0000459" species="species_5653875">
+            <notes>
+              <p xmlns="http://www.w3.org/1999/xhtml">This describes an Event/CatalystActivity that is positively regulated by the Regulator (e.g., allosteric activation)</p>
+            </notes>
+          </modifierSpeciesReference>
+        </listOfModifiers>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
