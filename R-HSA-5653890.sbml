@@ -739,8 +739,14 @@
       </species>
     </listOfSpecies>
 
-    <!-- Parameters for Kinetic Costants -->
     <listOfParameters>
+
+      <!-- Parameters for species concentration diff. equation -->
+      <parameter id="lambda_5653873" name="Rate constant for Glc transport" value="10.0" constant="true"/>
+      <parameter id="lambda_5653886" name="Rate constant for Complex formation" value="10.0" constant="true"/>
+      <parameter id="lambda_5653878" name="Rate constant for Lac synthesis" value="10.0" constant="true"/>
+
+      <!-- Parameters for K_in -->
       <parameter id="K_in_70113" value="10.0" constant="true"/>
       <parameter id="K_in_735682" value="10.0" constant="true"/>
       <parameter id="K_in_528072" value="10.0" constant="true"/>
@@ -748,10 +754,46 @@
       <parameter id="K_in_5653881" value="10.0" constant="true"/>
       <parameter id="K_in_5653875" value="10.0" constant="true"/>
 
+      <!-- Parameters for K_out -->
       <parameter id="K_out_5653871" name="Flux out for Lac" value="1.0" constant="true"/>
       <parameter id="K_out_205687" name="Flux out for UDP" value="1.0" constant="true"/>
       <parameter id="K_out_425969" name="Flux out for H+" value="1.0" constant="true"/>
+
+      <!-- Parameters for mean -->
+      <parameter id="y_5653871" name="Mean of Lac" value="0.0" constant="false"/>
+      <parameter id="y2_5653871" name="Second Moment of Lac" value="0.0" constant="false"/>
     </listOfParameters>
+
+    <listOfRules>
+      <rateRule variable="y_5653871">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply> <divide/>
+            <apply> <minus/>
+              <ci> species_5653871 </ci> <ci> y_5653871 </ci>      </apply>
+            <apply> <plus/>
+              <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+              <cn type="e-notation"> 1 <sep/> -6 </cn> </apply>
+          </apply>
+        </math>
+      </rateRule>
+
+      <rateRule variable="y2_5653871">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply> <divide/>
+            <apply> <minus/>
+              <apply> <power/> 
+                <ci> species_5653871 </ci> 
+                <cn> 2 </cn> 
+              </apply>
+              <ci> y2_5653871 </ci> </apply>
+            <apply> <plus/>
+              <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+              <cn type="e-notation"> 1 <sep/> -6 </cn>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+    </listOfRules>
 
     <listOfReactions>
       <reaction compartment="compartment_17963" fast="false" id="reaction_5653878" metaid="metaid_15" name="B4GALT1:LALBA transfers Gal from UDP-Gal to Glc to form Lac" reversible="false">
@@ -841,6 +883,7 @@
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply> <times/>
+              <ci> lambda_5653878 </ci>
               <apply> <divide/>
                 <apply> <power/> <ci> species_5653885 </ci> <cn> 10 </cn> </apply>
                 <apply> <plus/>
@@ -932,6 +975,7 @@
         <kineticLaw>
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply> <times/>
+            <ci> lambda_5653873 </ci>
             <apply> <divide/>
               <apply> <power/> <ci> species_5653881 </ci> <cn> 10 </cn> </apply>
               <apply> <plus/>
@@ -1030,6 +1074,7 @@
         <kineticLaw>
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply> <times/>
+            <ci> lambda_5653886 </ci>
             <apply> <divide/>
               <apply> <power/> <ci> species_5653875 </ci> <cn> 10 </cn> </apply>
               <apply> <plus/>
