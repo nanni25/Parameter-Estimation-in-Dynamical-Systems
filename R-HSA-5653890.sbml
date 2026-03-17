@@ -821,7 +821,25 @@
         <listOfModifiers>
           <modifierSpeciesReference id="modifierspeciesreference_5653878_catalyst_5653885" sboTerm="SBO:0000013" species="species_5653885" />
         </listOfModifiers>
+
+        <!-- Hill function 5653878-->
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply> <times/>
+              <apply> <divide/>
+                <apply> <power/> <ci> species_5653885 </ci> <cn> 10 </cn> </apply>
+                <apply> <plus/>
+                  <apply> <power/> <cn> 0.5 </cn> <cn> 10 </cn> </apply>
+                  <apply> <power/> <ci> species_5653885 </ci> <cn> 10 </cn> </apply>
+                </apply>
+              </apply>
+              <ci> species_964746 </ci> 
+              <ci> species_735682 </ci> 
+            </apply>
+          </math>
+        </kineticLaw>
       </reaction>
+
       <reaction compartment="compartment_17963" fast="false" id="reaction_5653873" metaid="metaid_16" name="SLC2A1 tetramer transports Glc from cytosol to Golgi lumen" reversible="false">
         <notes>
           <p xmlns="http://www.w3.org/1999/xhtml">SLC2A1 (aka GLUT1) tetramer in the Golgi membrane mediates the facilitated diffusion of glucose from the cytosol into the Golgi lumen. SLC2A1, normally confined to the plasma membrane, is also abundant in the Golgi membranes of epithelial cells of the lactating mammary gland, as demonstrated experimentally in mice (Nemeth et al. 2000). It is not known how this physiological state-specific relocalization is regulated.</p>
@@ -894,7 +912,24 @@
         <listOfModifiers>
           <modifierSpeciesReference id="modifierspeciesreference_5653873_catalyst_5653881" sboTerm="SBO:0000013" species="species_5653881" />
         </listOfModifiers>
+
+        <!-- Hill function 5653873 -->
+        <kineticLaw>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply> <times/>
+            <apply> <divide/>
+              <apply> <power/> <ci> species_5653881 </ci> <cn> 10 </cn> </apply>
+              <apply> <plus/>
+                <apply> <power/> <cn> 0.5 </cn> <cn> 10 </cn> </apply>
+                <apply> <power/> <ci> species_5653881 </ci> <cn> 10 </cn> </apply>
+              </apply>
+            </apply>
+            <ci> species_70113 </ci> 
+          </apply>
+        </math>
+        </kineticLaw>
       </reaction>
+
       <reaction compartment="compartment_17963" fast="false" id="reaction_5653886" metaid="metaid_17" name="B4GALT1 binds LALBA" reversible="false">
         <notes>
           <p xmlns="http://www.w3.org/1999/xhtml">B4GALT1 (beta-1,4-galactosyltransferase 1) in the Golgi membrane associates with LALBA (alpha-lactalbumin) to form a heterodimer. This binding reaction is positively regulated by Mn2+ ions and UDP-galactose. This heterodimer has been observed both in solution in vitro and in crystalline form (Andrews 1970; Ramakrishnan and Qasba 2001). The galactosyltransferase enzyme is found in the Golgi membrane of many cell types. LALBA is expressed specifically in the lactating mammary gland. Binding LALBA modulates the specificity of the galactosyltransferase enzyme. Alone, B4GALT1 transfers galactose moieties to glycolipids and N-linked oligosaccharides of glycoproteins. Complexed with LALBA, it transfers galactose to free glucose to form lactose (Brew and Hill 1975).</p>
@@ -975,7 +1010,32 @@
             </notes>
           </modifierSpeciesReference>
         </listOfModifiers>
+
+        <!-- Hill function 5653886 -->
+        <kineticLaw>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply> <times/>
+            <apply> <divide/>
+              <apply> <power/> <ci> species_5653875 </ci> <cn> 10 </cn> </apply>
+              <apply> <plus/>
+                <apply> <power/> <cn> 0.5 </cn> <cn> 10 </cn> </apply>
+                <apply> <power/> <ci> species_5653875 </ci> <cn> 10 </cn> </apply>
+              </apply>
+            </apply>
+            <apply> <divide/>
+              <apply> <power/> <ci> species_735682 </ci> <cn> 10 </cn> </apply>
+              <apply> <plus/>
+                <apply> <power/> <cn> 0.5 </cn> <cn> 10 </cn> </apply>
+                <apply> <power/> <ci> species_735682 </ci> <cn> 10 </cn> </apply>
+              </apply>
+            </apply>
+            <ci> species_528072 </ci>
+            <ci> species_5653896 </ci>
+          </apply>
+        </math>
+        </kineticLaw>
       </reaction>
+      
     </listOfReactions>
   </model>
 </sbml>
