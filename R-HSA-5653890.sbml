@@ -738,6 +738,21 @@
         </annotation>
       </species>
     </listOfSpecies>
+
+    <!-- Parameters for Kinetic Costants -->
+    <listOfParameters>
+      <parameter id="K_in_70113" value="10.0" constant="true"/>
+      <parameter id="K_in_735682" value="10.0" constant="true"/>
+      <parameter id="K_in_528072" value="10.0" constant="true"/>
+      <parameter id="K_in_5653896" value="10.0" constant="true"/>
+      <parameter id="K_in_5653881" value="10.0" constant="true"/>
+      <parameter id="K_in_5653875" value="10.0" constant="true"/>
+
+      <parameter id="K_out_5653871" name="Flux out for Lac" value="1.0" constant="true"/>
+      <parameter id="K_out_205687" name="Flux out for UDP" value="1.0" constant="true"/>
+      <parameter id="K_out_425969" name="Flux out for H+" value="1.0" constant="true"/>
+    </listOfParameters>
+
     <listOfReactions>
       <reaction compartment="compartment_17963" fast="false" id="reaction_5653878" metaid="metaid_15" name="B4GALT1:LALBA transfers Gal from UDP-Gal to Glc to form Lac" reversible="false">
         <notes>
@@ -1036,6 +1051,109 @@
         </kineticLaw>
       </reaction>
       
+      <!-- Input Source Reactions -->
+
+      <reaction id="source_70113" name="Source for Glc [cytosol]" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="species_70113" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_in_70113 </ci> 
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="source_735682" name="Source for UDP-Gal [Golgi lumen]" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="species_735682" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_in_735682 </ci> 
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="source_528072" name="Source for B4GALT1 [Golgi membrane]" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="species_528072" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_in_528072 </ci> 
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="source_5653896" name="Source for LALBA [Golgi lumen]" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="species_5653896" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_in_5653896 </ci> 
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="source_5653881" name="Source for SLC2A1 tetramer [Golgi membrane]" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="species_5653881" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_in_5653881 </ci> 
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="source_5653875" name="Source for Mn2+ [Golgi lumen]" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="species_5653875" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_in_5653875 </ci> 
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <!-- Output Sink Reactions -->
+
+      <reaction id="sink_5653871" name="Sink for Lac [Golgi lumen]" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="species_5653871" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_out_5653871 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="sink_205687" name="Sink for UDP [Golgi lumen]" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="species_205687" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_out_205687 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="sink_205687" name="Sink for UDP [Golgi lumen]" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="species_205687" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> K_out_205687 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+
     </listOfReactions>
   </model>
 </sbml>
