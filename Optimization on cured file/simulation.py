@@ -14,11 +14,11 @@ def generate_synthetic_targets(true_params):
         rr.setValue(param_id, param_val)
         
     result = rr.simulate(0, config.SIMULATION_TIME, steps=config.SIMULATION_STEPS)
-    config.TARGET_M = np.array(result)
     
-    return config.TARGET_M
+    # Return the target matrix directly instead of saving it globally
+    return np.array(result)
 
-def evaluate_loss(theta):
+def evaluate_loss(theta, target_data):
     rr.resetAll()
     
     actual_params = np.exp(theta)
@@ -30,6 +30,7 @@ def evaluate_loss(theta):
     simulated_y = np.array(result)
 
     epsilon = 1e-8
-    loss = np.sum(((simulated_y - config.TARGET_M) / (config.TARGET_M + epsilon))**2)
+    # Calculate loss using the explicitly passed target_data
+    loss = np.sum(((simulated_y - target_data) / (target_data + epsilon))**2)
     
     return loss
