@@ -1,51 +1,16 @@
 import numpy as np
 import config
+import json
 import matplotlib.pyplot as plt
-from simulation import evaluate_loss, generate_synthetic_targets
+import roadrunner
+from simulation import evaluate_loss
 
-def plot_results(history_best_loss, history_mean_loss, num_params, final_params):
-    """
-    Generates and saves thesis-ready visualizations of the optimization run.
-    """
-    # 1. Convergence Plot
-    plt.figure(figsize=(10, 6))
-    plt.plot(history_mean_loss, label='Mean Loss (Population)', color='#1f77b4', alpha=0.8)
-    plt.plot(history_best_loss, label='Best Loss (Individual)', color='#d62728', linewidth=2)
-    
-    plt.yscale('log')
-    plt.title('Optimizer Convergence over Generations', fontsize=14, fontweight='bold')
-    plt.xlabel('Generation', fontsize=12)
-    plt.ylabel('Mean Squared Error (Log Scale)', fontsize=12)
-    plt.grid(True, which="both", ls="--", alpha=0.5)
-    plt.legend(fontsize=12)
-    plt.tight_layout()
-    plt.savefig('convergence_plot.pdf', dpi=300)
-    
-    # 2. Parameter Comparison Plot
-    plt.figure(figsize=(14, 7))
-    x = np.arange(num_params) 
-    width = 0.35               
-    
-    fig, ax = plt.subplots(figsize=(14, 7))
-    rects1 = ax.bar(x - width/2, config.TRUE_PARAMS, width, label='True Values', color='#2ca02c')
-    rects2 = ax.bar(x + width/2, final_params, width, label='Optimized Values', color='#ff7f0e')
-
-    ax.set_ylabel('Parameter Value', fontsize=12)
-    ax.set_title('Comparison of True vs. Optimized Kinetic Parameters', fontsize=14, fontweight='bold')
-    ax.set_xticks(x)
-    ax.set_xticklabels(config.PARAMS_TO_OPTIMIZE, rotation=45, ha='right', fontsize=10)
-    ax.legend(fontsize=12)
-    ax.grid(axis='y', linestyle='--', alpha=0.7)
-
-    plt.tight_layout()
-    plt.savefig('parameter_comparison.pdf', dpi=300)
-    plt.show()
-    
 def main():
     np.random.seed(11)
 
-    print("Generating pure synthetic targets (no noise)...")
-    targets = generate_synthetic_targets(config.TRUE_PARAMS)
+    print("Loading target values from LLM...")
+    with open("targets.json", "r") as f:
+        targets = json.load(f)
     
     num_params = len(config.PARAMS_TO_OPTIMIZE)
     theta = np.zeros(num_params) 
@@ -62,7 +27,6 @@ def main():
     initial_lr = config.LEARNING_RATE
     initial_sigma = config.SIGMA
     
-    # Lists to track data for the convergence plot
     history_best_loss = []
     history_mean_loss = []
     
@@ -97,7 +61,6 @@ def main():
         min_loss = np.min(raw_losses)
         mean_loss = np.mean(raw_losses)
         
-        # Save the epoch's data for plotting
         history_best_loss.append(min_loss)
         history_mean_loss.append(mean_loss)
         
@@ -107,13 +70,70 @@ def main():
     print("\nOptimization Complete:")
     final_params = np.exp(theta)
     
-    print(f"{'Parameter':<15} | {'True Value':<12} | {'Optimized Value'}")
-    print("-" * 50)
-    for name, true_val, opt_val in zip(config.PARAMS_TO_OPTIMIZE, config.TRUE_PARAMS, final_params):
-        print(f"{name:<15} | {true_val:<12.6f} | {opt_val:.6f}")
+    print(f"{'Parameter':<15} | {'Optimized Value'}")
+    print("-" * 35)
+    for name, opt_val in zip(config.PARAMS_TO_OPTIMIZE, final_params):
+        print(f"{name:<15} | {opt_val:.6f}")
 
-    # Call our dedicated plotting function
-    plot_results(history_best_loss, history_mean_loss, num_params, final_params)
+    print("\nSimulating final parameters to compare against Targets...")
+    
+    rr = roadrunner.RoadRunner(config.MODEL_PATH)
+    rr.timeCourseSelections = config.MEAN_VARIABLES
+    rr.resetAll()
+    
+    for param_id, param_val in zip(config.PARAMS_TO_OPTIMIZE, final_params):
+        rr.setValue(param_id, param_val)
+        
+    result = rr.simulate(0, config.SIMULATION_TIME, steps=config.SIMULATION_STEPS)
+    simulated_means = np.mean(np.array(result), axis=0)
+
+    target_values = []
+    for var in config.MEAN_VARIABLES:
+        species_id = var.replace("y_", "species_")
+        target_values.append(targets[species_id])
+
+    print(f"\n{'Species (Target)':<18} | {'LLM Target':<12} | {'Simulated Mean'}")
+    print("-" * 55)
+    for var, target_val, sim_val in zip(config.MEAN_VARIABLES, target_values, simulated_means):
+        print(f"{var:<18} | {target_val:<12.6f} | {sim_val:.6f}")
+
+    plot_results(history_best_loss, history_mean_loss, config.MEAN_VARIABLES, target_values, simulated_means)
+
+def plot_results(history_best_loss, history_mean_loss, species_names, target_values, simulated_means):
+    
+    # 1. Convergence Plot
+    plt.figure(figsize=(10, 6))
+    plt.plot(history_mean_loss, label='Mean Loss (Population)', color='#1f77b4', alpha=0.8)
+    plt.plot(history_best_loss, label='Best Loss (Individual)', color='#d62728', linewidth=2)
+    plt.yscale('log')
+    plt.title('Optimizer Convergence over Generations', fontsize=14, fontweight='bold')
+    plt.xlabel('Generation', fontsize=12)
+    plt.ylabel('Mean Squared Error (Log Scale)', fontsize=12)
+    plt.grid(True, which="both", ls="--", alpha=0.5)
+    plt.legend(fontsize=12)
+    plt.tight_layout()
+    plt.savefig('convergence_plot.pdf', dpi=300)
+    plt.show()
+
+    # 2. Target vs. Simulated Mean Bar Chart
+    plt.figure(figsize=(14, 7))
+    x = np.arange(len(species_names))  
+    width = 0.35               
+    
+    fig, ax = plt.subplots(figsize=(14, 7))
+    rects1 = ax.bar(x - width/2, target_values, width, label='Targets', color='#2ca02c')
+    rects2 = ax.bar(x + width/2, simulated_means, width, label='Simulated Means', color='#ff7f0e')
+
+    ax.set_ylabel('Concentration Value', fontsize=12)
+    ax.set_title('Comparison of Targets vs. Mean Concentrations', fontsize=14, fontweight='bold')
+    ax.set_xticks(x)
+    ax.set_xticklabels(species_names, rotation=45, ha='right', fontsize=10)
+    ax.legend(fontsize=12)
+    ax.grid(axis='y', linestyle='--', alpha=0.7)
+
+    plt.tight_layout()
+    plt.savefig('target_comparison.pdf', dpi=300)
+    plt.show()
 
 if __name__ == "__main__":
     main()
