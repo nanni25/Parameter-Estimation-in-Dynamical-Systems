@@ -58,6 +58,8 @@ def main():
         
         theta = theta - current_lr * m_hat / (np.sqrt(v_hat) + adam_epsilon)
         
+        theta = np.clip(theta, -6.0, 6.0)
+        
         min_loss = np.min(raw_losses)
         mean_loss = np.mean(raw_losses)
         
@@ -68,7 +70,7 @@ def main():
             print(f"Gen {epoch+1:03d}/{config.NUM_GENERATIONS} | LR: {current_lr:.4f} | Sig: {current_sigma:.4f} | Best Loss: {min_loss:.6f}")
         
     print("\nOptimization Complete:")
-    final_params = np.exp(theta)
+    final_params = 10 ** theta
     
     print(f"{'Parameter':<15} | {'Optimized Value'}")
     print("-" * 35)

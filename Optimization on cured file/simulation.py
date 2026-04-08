@@ -8,7 +8,9 @@ rr.timeCourseSelections = config.MEAN_VARIABLES
 def evaluate_loss(theta, target_dict):
 
     rr.resetAll()
-    actual_params = np.exp(theta)
+    
+    theta = np.clip(theta, -6.0, 6.0)
+    actual_params = 10 ** theta
     
     for param_id, param_val in zip(config.PARAMS_TO_OPTIMIZE, actual_params):
         rr.setValue(param_id, param_val)
