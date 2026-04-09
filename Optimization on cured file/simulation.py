@@ -1,29 +1,21 @@
-import roadrunner
 import numpy as np
-import config
 
-rr = roadrunner.RoadRunner(config.MODEL_PATH)
-rr.timeCourseSelections = config.MEAN_VARIABLES
-
-def evaluate_loss(theta, target_dict):
-
+def evaluate_loss(rr, theta, target_dict, params_to_optimize, mean_variables, sim_time, sim_steps):
     rr.resetAll()
     
     theta = np.clip(theta, -6.0, 6.0)
     actual_params = 10 ** theta
     
-    for param_id, param_val in zip(config.PARAMS_TO_OPTIMIZE, actual_params):
+    for param_id, param_val in zip(params_to_optimize, actual_params):
         rr.setValue(param_id, param_val)
         
-    result = rr.simulate(0, config.SIMULATION_TIME, steps=config.SIMULATION_STEPS)
+    result = rr.simulate(0, sim_time, steps=sim_steps)
     simulated_y = np.array(result)
 
-    # Calculate the mean of the simulation over time
     simulated_means = simulated_y[-1]
     
-    # Extract the target values from the dictionary
     target_values = []
-    for var in config.MEAN_VARIABLES:
+    for var in mean_variables:
         species_id = var.replace("y_", "species_")
         target_values.append(target_dict[species_id])
         

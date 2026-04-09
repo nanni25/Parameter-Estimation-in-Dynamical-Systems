@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import roadrunner
-import config
 
 def plot_results(history_best_loss, history_mean_loss, species_names, target_values, simulated_means):
     # 1. Convergence Plot
@@ -38,36 +37,25 @@ def plot_results(history_best_loss, history_mean_loss, species_names, target_val
     plt.savefig('target_comparison.pdf', dpi=300)
     plt.show()
 
-def plot_timeline(final_params, targets):
+def plot_timeline(final_params, targets, model_path, params_to_optimize, mean_variables, sim_time, sim_steps):
     print("\nGenerating Time-Course Timeline Plot...")
+    rr = roadrunner.RoadRunner(model_path)
     
-    # 1. Create a fresh roadrunner instance for the timeline
-    rr = roadrunner.RoadRunner(config.MODEL_PATH)
-    
-    # 2. We want to plot the actual species over time, not the running means
-    species_ids = [var.replace("y_", "species_") for var in config.MEAN_VARIABLES]
+    species_ids = [var.replace("y_", "species_") for var in mean_variables]
     rr.timeCourseSelections = ['time'] + species_ids
     
-    # 3. Inject the optimized parameters
     rr.resetAll()
-    for param_id, param_val in zip(config.PARAMS_TO_OPTIMIZE, final_params):
+    for param_id, param_val in zip(params_to_optimize, final_params):
         rr.setValue(param_id, param_val)
         
-    # 4. Simulate (we use more steps here for a smoother curve)
-    result = rr.simulate(0, config.SIMULATION_TIME, steps=config.SIMULATION_STEPS * 5)
+    result = rr.simulate(0, sim_time, steps=sim_steps * 5)
     
-    # 5. Plotting
     plt.figure(figsize=(14, 8))
     time_array = result[:, 0]
     
-    # Plot each species curve
     for i, sp_id in enumerate(species_ids):
-        color = plt.cm.tab20(i % 20) # Get a distinct color for each species
-        
-        # Plot the simulated dynamic curve
+        color = plt.cm.tab20(i % 20) 
         plt.plot(time_array, result[:, i+1], label=f"{sp_id} (Sim)", color=color, linewidth=2)
-        
-        # Plot the LLM target as a dashed line to see if it reaches it
         if sp_id in targets:
             plt.axhline(y=targets[sp_id], color=color, linestyle='--', alpha=0.5)
 
@@ -75,8 +63,6 @@ def plot_timeline(final_params, targets):
     plt.xlabel('Time (Simulation Units)', fontsize=12)
     plt.ylabel('Concentration', fontsize=12)
     plt.grid(True, which="both", ls="--", alpha=0.5)
-    
-    # Put legend outside the plot so it doesn't cover the lines
     plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0., fontsize=9)
     plt.tight_layout()
     

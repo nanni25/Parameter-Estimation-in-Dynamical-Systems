@@ -3,7 +3,7 @@ import json
 from groq import Groq
 import os
 # --- CONFIGURATION ---
-API_KEY = os.environ.get("GROQ_API_KEY")
+API_KEY = os.environ.get("GROQ_API_KEY") # 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"
 SBML_FILE_PATH = "Models/R-HSA-5653890.sbml"
 OUTPUT_JSON_PATH = "targets.json"
 
