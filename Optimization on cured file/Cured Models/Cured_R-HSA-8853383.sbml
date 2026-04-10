@@ -1,0 +1,1370 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:ns1="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:ns5="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:ns6="http://purl.org/dc/terms/" xmlns:ns7="http://biomodels.net/biology-qualifiers/" xmlns:ns9="http://www.w3.org/1998/Math/MathML" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ns1:required="false" level="3" version="1">
+  <notes>
+    <annotation>
+      <html:p>SBML generated from Reactome version 96 on 4/7/26, 7:44 PM using JSBML version 1.5.</html:p>
+    </annotation>
+  </notes>
+  <model id="pathway_8853383" metaid="metaid_0" name="Lysosomal oligosaccharide catabolism">
+    <notes>
+      <html:p>N-Glycosylation is one of the most common co- and posttranslational modifications of eukaryotic proteins occurring in the ER lumen. N-glycosylation plays pivotal roles in protein folding and intra- or inter-cellular trafficking of N-glycosylated proteins. Quality control mechanisms in the ER sift out incorrectly-folded proteins from correctly-folded proteins, the former then destined for degradation. Incorrectly-folded N-glycans are exported to the cytosol where the process of degradation begins. Once the unfolded protein is cleaved from the oligosaccharide (forming free oligosaccharides, fOS), step-wise degradation of mannose moieties, both in the cytosol (Suzuki and Harada 2014) and then in the lysosome (Aronson and Kuranda 1989, Winchester 2005), results in complete degradation. Breakdown must be complete to avoid lysosomal storage diseases that occur when fragments as small as dimers are left undigested.</html:p>
+    </notes>
+    <annotation>
+      <rdf:RDF>
+        <rdf:Description rdf:about="#metaid_0">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>Jassal</ns5:Family>
+                  <ns5:Given>Bijay</ns5:Given>
+                </ns5:N>
+                <ns5:ORG rdf:parseType="Resource">
+                  <ns5:Orgname>OICR</ns5:Orgname>
+                </ns5:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>Jassal</ns5:Family>
+                  <ns5:Given>Bijay</ns5:Given>
+                </ns5:N>
+                <ns5:ORG rdf:parseType="Resource">
+                  <ns5:Orgname>OICR</ns5:Orgname>
+                </ns5:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>Weiser</ns5:Family>
+                  <ns5:Given>Joel</ns5:Given>
+                </ns5:N>
+                <ns5:ORG rdf:parseType="Resource">
+                  <ns5:Orgname>OICR</ns5:Orgname>
+                </ns5:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <ns6:created rdf:parseType="Resource">
+            <ns6:W3CDTF>2016-01-22T21:25:44Z</ns6:W3CDTF>
+          </ns6:created>
+          <ns6:modified rdf:parseType="Resource">
+            <ns6:W3CDTF>2026-03-16T14:36:02Z</ns6:W3CDTF>
+          </ns6:modified>
+          <ns6:modified rdf:parseType="Resource">
+            <ns6:W3CDTF>2016-01-22T21:25:44Z</ns6:W3CDTF>
+          </ns6:modified>
+          <ns7:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853383" />
+              <rdf:li rdf:resource="https://identifiers.org/GO:0009313" />
+            </rdf:Bag>
+          </ns7:is>
+          <ns7:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:26206502" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:2531691" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:15647514" />
+            </rdf:Bag>
+          </ns7:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <ns1:listOfLayouts>
+      <ns1:layout>
+        <ns1:listOfCompartmentGlyphs>
+          <ns1:compartmentGlyph ns1:compartment="compartment_70101" ns1:id="layout_2713">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="46" ns1:y="46" />
+              <ns1:dimensions ns1:height="607" ns1:width="1417" />
+            </ns1:boundingBox>
+          </ns1:compartmentGlyph>
+          <ns1:compartmentGlyph ns1:compartment="compartment_161320" ns1:id="layout_2714">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="505" ns1:y="188" />
+              <ns1:dimensions ns1:height="350" ns1:width="914" />
+            </ns1:boundingBox>
+          </ns1:compartmentGlyph>
+        </ns1:listOfCompartmentGlyphs>
+        <ns1:listOfSpeciesGlyphs>
+          <ns1:speciesGlyph ns1:id="layout_2515" ns1:species="species_429579">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="330" ns1:y="316" />
+              <ns1:dimensions ns1:height="30" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2516" ns1:species="species_6799543">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="364" ns1:y="265" />
+              <ns1:dimensions ns1:height="45" ns1:width="102" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2517" ns1:species="species_29356">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="159" ns1:y="350" />
+              <ns1:dimensions ns1:height="30" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2518" ns1:species="species_6799540">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="60" ns1:y="208" />
+              <ns1:dimensions ns1:height="82" ns1:width="151" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2519" ns1:species="species_6799594">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="993" ns1:y="454" />
+              <ns1:dimensions ns1:height="30" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2521" ns1:species="species_6799546">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="194" ns1:y="178" />
+              <ns1:dimensions ns1:height="32" ns1:width="128" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2525" ns1:species="species_6799591">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="973" ns1:y="230" />
+              <ns1:dimensions ns1:height="32" ns1:width="128" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2526" ns1:species="species_1605715">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="913" ns1:y="314" />
+              <ns1:dimensions ns1:height="30" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2527" ns1:species="species_6799577">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="840" ns1:y="271" />
+              <ns1:dimensions ns1:height="30" ns1:width="102" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2608" ns1:species="species_8853396">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="547" ns1:y="268" />
+              <ns1:dimensions ns1:height="40" ns1:width="103" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2610" ns1:species="species_1605715">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="633" ns1:y="322" />
+              <ns1:dimensions ns1:height="30" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2611" ns1:species="species_8853668">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="678" ns1:y="234" />
+              <ns1:dimensions ns1:height="32" ns1:width="128" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2613" ns1:species="species_8853719">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1124" ns1:y="269" />
+              <ns1:dimensions ns1:height="30" ns1:width="86" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2614" ns1:species="species_1678743">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1334" ns1:y="268" />
+              <ns1:dimensions ns1:height="30" ns1:width="58" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2615" ns1:species="species_8853711">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1225" ns1:y="228" />
+              <ns1:dimensions ns1:height="22" ns1:width="51" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+        </ns1:listOfSpeciesGlyphs>
+        <ns1:listOfReactionGlyphs>
+          <ns1:reactionGlyph ns1:id="layout_2514" ns1:reaction="reaction_6799581">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1048" ns1:y="278" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1008" ns1:y="284" />
+                  <ns1:end ns1:x="1054" ns1:y="284" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1054" ns1:y="284" />
+                  <ns1:end ns1:x="1095" ns1:y="284" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2514_substrate_0" ns1:speciesGlyph="layout_2526">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1008" ns1:y="284" />
+                      <ns1:end ns1:x="959" ns1:y="315" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2514_substrate_1" ns1:speciesGlyph="layout_2527">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1008" ns1:y="284" />
+                      <ns1:end ns1:x="945" ns1:y="285" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2514_product_0" ns1:speciesGlyph="layout_2613">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1095" ns1:y="284" />
+                      <ns1:end ns1:x="1121" ns1:y="284" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2514_product_1" ns1:speciesGlyph="layout_2519">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1095" ns1:y="284" />
+                      <ns1:end ns1:x="1019" ns1:y="451" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2514_modifier_0" ns1:speciesGlyph="layout_2525">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1044" ns1:y="265" />
+                      <ns1:end ns1:x="1054" ns1:y="284" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_2524" ns1:reaction="reaction_6799545">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="253" ns1:y="279" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="226" ns1:y="285" />
+                  <ns1:end ns1:x="259" ns1:y="285" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="259" ns1:y="285" />
+                  <ns1:end ns1:x="290" ns1:y="285" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2524_substrate_0" ns1:speciesGlyph="layout_2517">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="226" ns1:y="285" />
+                      <ns1:end ns1:x="188" ns1:y="347" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2524_substrate_1" ns1:speciesGlyph="layout_2518">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="226" ns1:y="285" />
+                      <ns1:end ns1:x="214" ns1:y="278" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2524_product_0" ns1:speciesGlyph="layout_2515">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="290" ns1:y="285" />
+                      <ns1:end ns1:x="330" ns1:y="313" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2524_product_1" ns1:speciesGlyph="layout_2516">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="290" ns1:y="285" />
+                      <ns1:end ns1:x="361" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2524_modifier_0" ns1:speciesGlyph="layout_2521">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="258" ns1:y="213" />
+                      <ns1:end ns1:x="259" ns1:y="285" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_2607" ns1:reaction="reaction_8853391">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="503" ns1:y="280" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="489" ns1:y="286" />
+                  <ns1:end ns1:x="509" ns1:y="286" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="509" ns1:y="286" />
+                  <ns1:end ns1:x="526" ns1:y="286" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2607_substrate_0" ns1:speciesGlyph="layout_2516">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="489" ns1:y="286" />
+                      <ns1:end ns1:x="469" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2607_product_0" ns1:speciesGlyph="layout_2608">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="526" ns1:y="286" />
+                      <ns1:end ns1:x="544" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_2609" ns1:reaction="reaction_8853686">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="737" ns1:y="280" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="700" ns1:y="286" />
+                  <ns1:end ns1:x="743" ns1:y="286" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="743" ns1:y="286" />
+                  <ns1:end ns1:x="791" ns1:y="286" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2609_substrate_0" ns1:speciesGlyph="layout_2610">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="700" ns1:y="286" />
+                      <ns1:end ns1:x="667" ns1:y="319" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2609_substrate_1" ns1:speciesGlyph="layout_2608">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="700" ns1:y="286" />
+                      <ns1:end ns1:x="653" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2609_product_0" ns1:speciesGlyph="layout_2519">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="791" ns1:y="286" />
+                      <ns1:end ns1:x="994" ns1:y="451" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2609_product_1" ns1:speciesGlyph="layout_2527">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="791" ns1:y="286" />
+                      <ns1:end ns1:x="837" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2609_modifier_0" ns1:speciesGlyph="layout_2611">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="742" ns1:y="269" />
+                      <ns1:end ns1:x="743" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_2612" ns1:reaction="reaction_8853710">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1245" ns1:y="276" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1232" ns1:y="282" />
+                  <ns1:end ns1:x="1251" ns1:y="282" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1251" ns1:y="282" />
+                  <ns1:end ns1:x="1292" ns1:y="282" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2612_substrate_0" ns1:speciesGlyph="layout_2613">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1232" ns1:y="282" />
+                      <ns1:end ns1:x="1213" ns1:y="282" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2612_product_0" ns1:speciesGlyph="layout_2614">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1292" ns1:y="282" />
+                      <ns1:end ns1:x="1331" ns1:y="282" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2612_product_1" ns1:speciesGlyph="layout_2519">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1292" ns1:y="282" />
+                      <ns1:end ns1:x="1037" ns1:y="455" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2612_modifier_0" ns1:speciesGlyph="layout_2615">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1250" ns1:y="253" />
+                      <ns1:end ns1:x="1251" ns1:y="282" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+        </ns1:listOfReactionGlyphs>
+        <ns1:listOfTextGlyphs>
+          <ns1:textGlyph ns1:graphicalObject="layout_2713" ns1:id="text_layout_2713" ns1:text="cytosol">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="239" ns1:y="429" />
+              <ns1:dimensions ns1:height="33" ns1:width="64" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2714" ns1:id="text_layout_2714" ns1:text="lysosomal lumen">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="678" ns1:y="435" />
+              <ns1:dimensions ns1:height="33" ns1:width="123" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2515" ns1:id="text_layout_2515" ns1:text="Man">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="333" ns1:y="320" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2516" ns1:id="text_layout_2516" ns1:text="alpha-D-Man-(1-&gt;3)-">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="370" ns1:y="270" />
+              <ns1:dimensions ns1:height="35" ns1:width="90" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2517" ns1:id="text_layout_2517" ns1:text="H2O">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="163" ns1:y="354" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2518" ns1:id="text_layout_2518" ns1:text="alpha-D-Man-(1-&gt;2)-alpha-D-Man-(1-&gt;2)-alpha-D-Man-(1-&gt;3)-">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="68" ns1:y="224" />
+              <ns1:dimensions ns1:height="49" ns1:width="134" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2519" ns1:id="text_layout_2519" ns1:text="Man">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="996" ns1:y="458" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2521" ns1:id="text_layout_2521" ns1:text="MAN2C1:Zn2+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="209" ns1:y="189" />
+              <ns1:dimensions ns1:height="21" ns1:width="98" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2525" ns1:id="text_layout_2525" ns1:text="MAN2B2:Zn2+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="988" ns1:y="241" />
+              <ns1:dimensions ns1:height="21" ns1:width="98" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2526" ns1:id="text_layout_2526" ns1:text="H2O">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="917" ns1:y="318" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2527" ns1:id="text_layout_2527" ns1:text="alpha-D-Man-(1-&gt;3)-">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="846" ns1:y="269" />
+              <ns1:dimensions ns1:height="35" ns1:width="90" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2608" ns1:id="text_layout_2608" ns1:text="alpha-D-Man-(1-&gt;3)-">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="553" ns1:y="270" />
+              <ns1:dimensions ns1:height="35" ns1:width="90" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2610" ns1:id="text_layout_2610" ns1:text="H2O">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="637" ns1:y="326" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2611" ns1:id="text_layout_2611" ns1:text="MAN2B1:Zn2+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="693" ns1:y="245" />
+              <ns1:dimensions ns1:height="21" ns1:width="98" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2613" ns1:id="text_layout_2613" ns1:text="GlcNAc:Man">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1126" ns1:y="273" />
+              <ns1:dimensions ns1:height="21" ns1:width="81" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2614" ns1:id="text_layout_2614" ns1:text="GlcNAc">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1337" ns1:y="272" />
+              <ns1:dimensions ns1:height="21" ns1:width="51" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2615" ns1:id="text_layout_2615" ns1:text="MANBA">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1225" ns1:y="228" />
+              <ns1:dimensions ns1:height="21" ns1:width="51" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+        </ns1:listOfTextGlyphs>
+      </ns1:layout>
+    </ns1:listOfLayouts>
+    <listOfCompartments>
+      <compartment constant="true" id="compartment_70101" metaid="metaid_2" name="cytosol" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_2">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005829" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment constant="true" id="compartment_161320" metaid="metaid_4" name="lysosomal lumen" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_4">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0043202" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29356" metaid="metaid_1" name="H2O [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_1">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29356" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_6799591" metaid="metaid_3" name="MAN2B2:Zn2+ [lysosomal lumen]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (29105, Q9Y2E5). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_3">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799591" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29105" />
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:Q9Y2E5" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-6799591" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-6799591" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_8853396" metaid="metaid_5" name="alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;6)]-alpha-D-Man-(1-&gt;6)]-beta-D-Man-(1-&gt;4)-beta-D-GlcNAc [lysosomal lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_5">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:91280" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-8853396" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_6799594" metaid="metaid_6" name="Man [lysosomal lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_6">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4208" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-6799594" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_1678743" metaid="metaid_7" name="GlcNAc [lysosomal lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_7">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17411" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-1678743" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_429579" metaid="metaid_8" name="Man [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_8">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4208" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-429579" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_6799540" metaid="metaid_9" name="alpha-D-Man-(1-&gt;2)-alpha-D-Man-(1-&gt;2)-alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;2)-alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;2)-alpha-D-Man-(1-&gt;6)]-alpha-D-Man-(1-&gt;6)]-beta-D-Man-(1-&gt;4)-beta-D-GlcNAc [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_9">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:91284" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-6799540" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_8853668" metaid="metaid_10" name="MAN2B1:Zn2+ [lysosomal lumen]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (29105, O00754). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_10">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853668" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29105" />
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:O00754" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-8853668" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-8853668" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_6799577" metaid="metaid_11" name="alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;6)]-beta-D-Man-(1-&gt;4)-beta-D-GlcNAc [lysosomal lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_11">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:91279" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-6799577" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_6799546" metaid="metaid_12" name="MAN2C1:Zn2+ [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (Q9NTJ4, 29105). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_12">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799546" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:Q9NTJ4" />
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29105" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-6799546" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-6799546" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_8853719" metaid="metaid_13" name="GlcNAc:Man [lysosomal lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_13">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:71553" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-8853719" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_8853711" metaid="metaid_14" name="MANBA [lysosomal lumen]" sboTerm="SBO:0000252">
+        <notes>
+          <html:p>Derived from a Reactome EntityWithAccessionedSequence. This is a protein</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_14">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:O00462" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853711" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-8853711" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-8853711" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_6799543" metaid="metaid_15" name="alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;3)-[alpha-D-Man-(1-&gt;6)]-alpha-D-Man-(1-&gt;6)]-beta-D-Man-(1-&gt;4)-beta-D-GlcNAc [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_15">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:91280" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-6799543" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_161320" constant="false" hasOnlySubstanceUnits="false" id="species_1605715" metaid="metaid_16" name="H2O [lysosomal lumen]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_16">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-1605715" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_6799545" metaid="metaid_17" name="MAN2C1 hydrolyses GlcNAc (Man)9 to GlcNAc (Man)5" reversible="false">
+        <notes>
+          <html:p>Endoplasmic reticulum-associated degradation of misfolded glycoproteins ensures only functional, correctly folded proteins exit from the endoplasmic reticulum and that misfolded ones are targeted for lysosomal degradation. Misfolded glycoproteins are deglycosylated in the cytosol and the resultant free oligosaccharide can be further hydrolysed by alpha-mannosidase 2C1 (MAN2C1). For example, the oligosaccharide structure GlcNAc (Man)9 is hydrolysed by MAN2C1 to GlcNAc (Man)5, an intermediate structure formed in the N-glycan precursor biosynthesis pathway (Suzuki et al. 2006).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_17">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-09-25T13:56:54Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T14:36:02Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-09-25T00:02:25Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799545" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16848760" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799545" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004559" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:3.2.1.24" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_6799545_input_29356" sboTerm="SBO:0000010" species="species_29356" stoichiometry="4" />
+          <speciesReference constant="true" id="speciesreference_6799545_input_6799540" sboTerm="SBO:0000010" species="species_6799540" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_6799545_output_429579" sboTerm="SBO:0000011" species="species_429579" stoichiometry="4" />
+          <speciesReference constant="true" id="speciesreference_6799545_output_6799543" sboTerm="SBO:0000011" species="species_6799543" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_6799545_catalyst_6799546" sboTerm="SBO:0000013" species="species_6799546" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_6799545</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_6799546</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_6799546</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_29356</ns9:ci><ns9:ci>species_6799540</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_161320" fast="false" id="reaction_6799581" metaid="metaid_18" name="MAN2B2 hydrolyses GlcNAc (Man)3 to GlcNAc:Man" reversible="false">
+        <notes>
+          <html:p>Endoplasmic reticulum-associated degradation of misfolded glycoproteins ensures only functional, correctly folded proteins exit from the endoplasmic reticulum and that misfolded ones are targeted for lysosomal degradation. Once located to the lysosome, epididymis-specific alpha-mannosidase (MAN2B2) can hydrolyse nondegraded oligosaccharides such as GlcNAc (Man)3 to GlcNAc (Man)2 quickly and GlcNAc (Man)2 to GlcNAc:Man slowly (Park et al. 2005, Venkatesan et al. 2009). MAN2B2 is ubiquitously expressed and belongs to a broad alpha-mannosidase family called class 2 alpha-mannosidases (CAZy glycosylhydrolase family 38, GH38). GH38 members are found in the Golgi complex, lysosomes, and cytosol where they are involved in either glycoprotein biosynthesis or catabolism.</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_18">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-09-25T16:49:23Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T13:12:44Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-09-25T00:02:25Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799581" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19722277" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16115860" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799581" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0008496" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:3.2.1.101" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_6799581_input_6799577" sboTerm="SBO:0000010" species="species_6799577" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6799581_input_1605715" sboTerm="SBO:0000010" species="species_1605715" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_6799581_output_6799594" sboTerm="SBO:0000011" species="species_6799594" stoichiometry="2" />
+          <speciesReference constant="true" id="speciesreference_6799581_output_8853719" sboTerm="SBO:0000011" species="species_8853719" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_6799581_catalyst_6799591" sboTerm="SBO:0000013" species="species_6799591" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_6799581</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_6799591</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_6799591</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_6799577</ns9:ci><ns9:ci>species_1605715</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_161320" fast="false" id="reaction_8853710" metaid="metaid_19" name="MANBA hydrolyses GlcNAc:Man" reversible="false">
+        <notes>
+          <html:p>Beta-mannosidase (MANBA) is the final exoglycosidase in the degradation pathway for N-linked oligosaccharides of glycoproteins, cleaving the beta-mannoside linkage of the disaccharide Man-1,4-GlcNAc (Alkhayat et al. 1998, Percheron et al. 1992). Defects in MANBA causes beta-mannosidosis (MIM:248510), a lysosomal storage disease of glycoprotein catabolism. A wide range of symptoms are observed, dependent on age of onset. The disease is associated with various degrees of mental retardation in most of the cases, hearing loss and speech impairment, hypotonia, epilepsy and peripheral neuropathy (Alkhayat et al. 1998, Molho-Pessach et al. 2007).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_19">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2016-01-25T18:09:31Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T13:12:44Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2016-01-25T18:09:31Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853710" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:9384606" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:1576208" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:17420068" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853710" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004567" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:3.2.1.25" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_8853710_input_8853719" sboTerm="SBO:0000010" species="species_8853719" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_8853710_output_6799594" sboTerm="SBO:0000011" species="species_6799594" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_8853710_output_1678743" sboTerm="SBO:0000011" species="species_1678743" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_8853710_catalyst_8853711" sboTerm="SBO:0000013" species="species_8853711" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_8853710</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_8853711</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_8853711</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_8853719</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_161320" fast="false" id="reaction_8853686" metaid="metaid_20" name="MAN2B1 hydrolyses GlcNAc (Man)5 to GlcNAc (Man)3" reversible="false">
+        <notes>
+          <html:p>Lysosomal alpha-mannosidase (MAN2B1) belongs to a broad alpha-mannosidase family called class 2 alpha-mannosidases (CAZy glycosylhydrolase family 38, GH38). GH38 members are found in the Golgi complex, lysosomes, and cytosol where they are involved in either glycoprotein biosynthesis or catabolism. MAN2B1 (Liao et al. 1996, Berg et al. 1999) is involved in the sequential hydrolysis of mannose oligosaccharides sent to lysosomes for degradation. From the non-reducing end, MAN2B1 catalyses the hydrolysis of alpha(1,2), alpha(1,3) and alpha(1,6) mannosidic linkages (Beccari et al. 1999). Defects in the MAN2B1 gene cause alpha-mannosidosis (MIM:248500), a rare lysosomal storage disease. The disorder is characterised by a range of clinical phenotypes, the major manifestations being mental impairment, hearing impairment, skeletal changes, and immunodeficiency (Borgwardt et al. 2014, Riise Stensland et al. 2015).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_20">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2016-01-25T18:09:31Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T13:12:44Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2016-01-25T18:09:31Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853686" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:8910458" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11350179" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:10513892" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:25762455" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:25345101" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853686" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004559" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:3.2.1.24" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_8853686_input_8853396" sboTerm="SBO:0000010" species="species_8853396" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_8853686_input_1605715" sboTerm="SBO:0000010" species="species_1605715" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_8853686_output_6799594" sboTerm="SBO:0000011" species="species_6799594" stoichiometry="2" />
+          <speciesReference constant="true" id="speciesreference_8853686_output_6799577" sboTerm="SBO:0000011" species="species_6799577" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_8853686_catalyst_8853668" sboTerm="SBO:0000013" species="species_8853668" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_8853686</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_8853668</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_8853668</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_8853396</ns9:ci><ns9:ci>species_1605715</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_8853391" metaid="metaid_21" name="GlcNAc (Man)5 translocates from cytosol to lysosomal lumen" reversible="false">
+        <notes>
+          <html:p>Free oligosaccharides with the structure GlcNAc (Man)5 are transported from the cytosol to the lysosomal lumen by an unknown mechanism (Saint-Pol et al. 1997).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_21">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2016-01-22T21:48:29Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2025-07-17T16:29:28Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2016-01-22T21:48:29Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853391" />
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0007041" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:9008702" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-8853391" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0007041" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_8853391_input_6799543" sboTerm="SBO:0000010" species="species_6799543" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_8853391_output_8853396" sboTerm="SBO:0000011" species="species_8853396" stoichiometry="1" />
+        </listOfProducts>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_8853391</ns9:ci><ns9:ci>species_6799543</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+    <reaction id="source_29356" reversible="false" fast="false"><listOfProducts><speciesReference species="species_29356" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_29356</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_6799591" reversible="false" fast="false"><listOfProducts><speciesReference species="species_6799591" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_6799591</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_6799540" reversible="false" fast="false"><listOfProducts><speciesReference species="species_6799540" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_6799540</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_8853668" reversible="false" fast="false"><listOfProducts><speciesReference species="species_8853668" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_8853668</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_6799546" reversible="false" fast="false"><listOfProducts><speciesReference species="species_6799546" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_6799546</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_8853711" reversible="false" fast="false"><listOfProducts><speciesReference species="species_8853711" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_8853711</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_1605715" reversible="false" fast="false"><listOfProducts><speciesReference species="species_1605715" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_1605715</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="sink_6799594" reversible="false" fast="false"><listOfReactants><speciesReference species="species_6799594" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_6799594</ns9:ci><ns9:ci>species_6799594</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_1678743" reversible="false" fast="false"><listOfReactants><speciesReference species="species_1678743" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_1678743</ns9:ci><ns9:ci>species_1678743</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_429579" reversible="false" fast="false"><listOfReactants><speciesReference species="species_429579" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_429579</ns9:ci><ns9:ci>species_429579</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction></listOfReactions>
+  <listOfParameters><parameter id="lambda_reaction_6799545" value="10.0" constant="true" /><parameter id="lambda_reaction_6799581" value="10.0" constant="true" /><parameter id="lambda_reaction_8853710" value="10.0" constant="true" /><parameter id="lambda_reaction_8853686" value="10.0" constant="true" /><parameter id="lambda_reaction_8853391" value="10.0" constant="true" /><parameter id="K_in_29356" value="10.0" constant="true" /><parameter id="K_in_6799591" value="10.0" constant="true" /><parameter id="K_in_6799540" value="10.0" constant="true" /><parameter id="K_in_8853668" value="10.0" constant="true" /><parameter id="K_in_6799546" value="10.0" constant="true" /><parameter id="K_in_8853711" value="10.0" constant="true" /><parameter id="K_in_1605715" value="10.0" constant="true" /><parameter id="K_out_6799594" value="1.0" constant="true" /><parameter id="K_out_1678743" value="1.0" constant="true" /><parameter id="K_out_429579" value="1.0" constant="true" /><parameter id="y_29356" value="0.0" constant="false" /><parameter id="y2_29356" value="0.0" constant="false" /><parameter id="y_6799591" value="0.0" constant="false" /><parameter id="y2_6799591" value="0.0" constant="false" /><parameter id="y_8853396" value="0.0" constant="false" /><parameter id="y2_8853396" value="0.0" constant="false" /><parameter id="y_6799594" value="0.0" constant="false" /><parameter id="y2_6799594" value="0.0" constant="false" /><parameter id="y_1678743" value="0.0" constant="false" /><parameter id="y2_1678743" value="0.0" constant="false" /><parameter id="y_429579" value="0.0" constant="false" /><parameter id="y2_429579" value="0.0" constant="false" /><parameter id="y_6799540" value="0.0" constant="false" /><parameter id="y2_6799540" value="0.0" constant="false" /><parameter id="y_8853668" value="0.0" constant="false" /><parameter id="y2_8853668" value="0.0" constant="false" /><parameter id="y_6799577" value="0.0" constant="false" /><parameter id="y2_6799577" value="0.0" constant="false" /><parameter id="y_6799546" value="0.0" constant="false" /><parameter id="y2_6799546" value="0.0" constant="false" /><parameter id="y_8853719" value="0.0" constant="false" /><parameter id="y2_8853719" value="0.0" constant="false" /><parameter id="y_8853711" value="0.0" constant="false" /><parameter id="y2_8853711" value="0.0" constant="false" /><parameter id="y_6799543" value="0.0" constant="false" /><parameter id="y2_6799543" value="0.0" constant="false" /><parameter id="y_1605715" value="0.0" constant="false" /><parameter id="y2_1605715" value="0.0" constant="false" /></listOfParameters><listOfRules><rateRule variable="y_29356"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29356</ns9:ci><ns9:ci>y_29356</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29356"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29356</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29356</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799591"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799591</ns9:ci><ns9:ci>y_6799591</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799591"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799591</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799591</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_8853396"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_8853396</ns9:ci><ns9:ci>y_8853396</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_8853396"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_8853396</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_8853396</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799594"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799594</ns9:ci><ns9:ci>y_6799594</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799594"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799594</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799594</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_1678743"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_1678743</ns9:ci><ns9:ci>y_1678743</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_1678743"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_1678743</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_1678743</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_429579"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_429579</ns9:ci><ns9:ci>y_429579</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_429579"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_429579</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_429579</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799540"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799540</ns9:ci><ns9:ci>y_6799540</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799540"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799540</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799540</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_8853668"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_8853668</ns9:ci><ns9:ci>y_8853668</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_8853668"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_8853668</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_8853668</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799577"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799577</ns9:ci><ns9:ci>y_6799577</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799577"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799577</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799577</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799546"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799546</ns9:ci><ns9:ci>y_6799546</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799546"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799546</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799546</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_8853719"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_8853719</ns9:ci><ns9:ci>y_8853719</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_8853719"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_8853719</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_8853719</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_8853711"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_8853711</ns9:ci><ns9:ci>y_8853711</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_8853711"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_8853711</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_8853711</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799543"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799543</ns9:ci><ns9:ci>y_6799543</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799543"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799543</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799543</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_1605715"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_1605715</ns9:ci><ns9:ci>y_1605715</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_1605715"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_1605715</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_1605715</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule></listOfRules></model>
+</sbml>

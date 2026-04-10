@@ -63,12 +63,12 @@ if __name__ == "__main__":
     parser.add_argument("--targets_dir", type=str, default="Targets", help="Directory to save target JSON files.")
     
     # Optimizer Hyperparameters
-    parser.add_argument("--sim_time", type=float, default=100.0, help="Total simulation time.")
-    parser.add_argument("--sim_steps", type=int, default=100, help="Number of simulation steps.")
+    parser.add_argument("--sim_time", type=float, default=1000.0, help="Total simulation time.")
+    parser.add_argument("--sim_steps", type=int, default=1000, help="Number of simulation steps.")
     parser.add_argument("--pop_size", type=int, default=100, help="Population size for the optimizer.")
     parser.add_argument("--generations", type=int, default=500, help="Number of optimization generations.")
-    parser.add_argument("--learning_rate", type=float, default=0.1, help="Learning rate.")
-    parser.add_argument("--sigma", type=float, default=0.1, help="Exploration variance (sigma).")
+    parser.add_argument("--learning_rate", type=float, default=0.035, help="Learning rate.")
+    parser.add_argument("--sigma", type=float, default=0.035, help="Exploration variance (sigma).")
     
     args = parser.parse_args()
     run_pipeline(args)

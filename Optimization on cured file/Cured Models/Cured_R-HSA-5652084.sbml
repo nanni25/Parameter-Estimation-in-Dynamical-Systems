@@ -1,0 +1,2469 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:ns1="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:ns5="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:ns6="http://purl.org/dc/terms/" xmlns:ns7="http://biomodels.net/biology-qualifiers/" xmlns:ns9="http://www.w3.org/1998/Math/MathML" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ns1:required="false" level="3" version="1">
+  <notes>
+    <annotation>
+      <html:p>SBML generated from Reactome version 96 on 4/10/26, 10:38 AM using JSBML version 1.5.</html:p>
+    </annotation>
+  </notes>
+  <model id="pathway_5652084" metaid="metaid_0" name="Fructose metabolism">
+    <notes>
+      <html:p>Fructose is found in fruits, is one of the components of the disaccharide sucrose, and is a widely used sweetener in processed foods. Dietary fructose is catabolized in the liver via fructose 1-phosphate to yield dihydroxyacetone phosphate and glyceraldehyde 3-phosphate, which then are converted to pyruvate via steps of canonical glycolysis (Hers and Kusaka 1953; Sillero et al. 1969). Excessive dietary intake of fructose and its metabolism have been associated with major disease risks in humans, although this issue remains controversial (Kolderup and Svihus 2015; DiNicolantonio et al. 2015; Bray 2013; Mayes 1993; Rippe and Angelopoulos 2013; van Buul et al. 2013). Fructose can also be synthesized from glucose via the polyol pathway (Hers 1960; Oates 2008). This synthetic process provides the fructose found in seminal fluid and, in other tissues, can contribute to pathologies of diabetes.</html:p>
+    </notes>
+    <annotation>
+      <rdf:RDF>
+        <rdf:Description rdf:about="#metaid_0">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>D'Eustachio</ns5:Family>
+                  <ns5:Given>Peter</ns5:Given>
+                </ns5:N>
+                <ns5:ORG rdf:parseType="Resource">
+                  <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                </ns5:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>D'Eustachio</ns5:Family>
+                  <ns5:Given>Peter</ns5:Given>
+                </ns5:N>
+                <ns5:ORG rdf:parseType="Resource">
+                  <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                </ns5:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>Ribeiro</ns5:Family>
+                  <ns5:Given>Joao Meireles</ns5:Given>
+                </ns5:N>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>Cameselle</ns5:Family>
+                  <ns5:Given>Jose Carlos</ns5:Given>
+                </ns5:N>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <ns5:N rdf:parseType="Resource">
+                  <ns5:Family>Weiser</ns5:Family>
+                  <ns5:Given>Joel</ns5:Given>
+                </ns5:N>
+                <ns5:ORG rdf:parseType="Resource">
+                  <ns5:Orgname>OICR</ns5:Orgname>
+                </ns5:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <ns6:created rdf:parseType="Resource">
+            <ns6:W3CDTF>2014-11-27T03:02:28Z</ns6:W3CDTF>
+          </ns6:created>
+          <ns6:modified rdf:parseType="Resource">
+            <ns6:W3CDTF>2026-03-16T15:17:35Z</ns6:W3CDTF>
+          </ns6:modified>
+          <ns6:modified rdf:parseType="Resource">
+            <ns6:W3CDTF>2015-08-28T02:27:24Z</ns6:W3CDTF>
+          </ns6:modified>
+          <ns6:modified rdf:parseType="Resource">
+            <ns6:W3CDTF>2014-11-27T03:02:28Z</ns6:W3CDTF>
+          </ns6:modified>
+          <ns7:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652084" />
+              <rdf:li rdf:resource="https://identifiers.org/GO:0006000" />
+            </rdf:Bag>
+          </ns7:is>
+          <ns7:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:23493538" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:25639270" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:14401391" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:13093749" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:26199742" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:8213607" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:18220710" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:23493540" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:5823111" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:24666553" />
+            </rdf:Bag>
+          </ns7:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <ns1:listOfLayouts>
+      <ns1:layout>
+        <ns1:listOfCompartmentGlyphs>
+          <ns1:compartmentGlyph ns1:compartment="compartment_70101" ns1:id="layout_7">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="28" ns1:y="26" />
+              <ns1:dimensions ns1:height="351" ns1:width="1638" />
+            </ns1:boundingBox>
+          </ns1:compartmentGlyph>
+        </ns1:listOfCompartmentGlyphs>
+        <ns1:listOfSpeciesGlyphs>
+          <ns1:speciesGlyph ns1:id="layout_90" ns1:species="species_29370">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="776" ns1:y="236" />
+              <ns1:dimensions ns1:height="30" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_108" ns1:species="species_75970">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1034" ns1:y="81" />
+              <ns1:dimensions ns1:height="30" ns1:width="49" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_109" ns1:species="species_29578">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1298" ns1:y="253" />
+              <ns1:dimensions ns1:height="30" ns1:width="49" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_365" ns1:species="species_70113">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="69" ns1:y="133" />
+              <ns1:dimensions ns1:height="30" ns1:width="37" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_432" ns1:species="species_30393">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1081" ns1:y="153" />
+              <ns1:dimensions ns1:height="30" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_434" ns1:species="species_113592">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1046" ns1:y="289" />
+              <ns1:dimensions ns1:height="30" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_435" ns1:species="species_29370">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1252" ns1:y="289" />
+              <ns1:dimensions ns1:height="30" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_560" ns1:species="species_70340">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="944" ns1:y="84" />
+              <ns1:dimensions ns1:height="38" ns1:width="63" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_925" ns1:species="species_3006523">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="735" ns1:y="91" />
+              <ns1:dimensions ns1:height="22" ns1:width="74" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1111" ns1:species="species_5652070">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1113" ns1:y="308" />
+              <ns1:dimensions ns1:height="35" ns1:width="90" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1113" ns1:species="species_5652213">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="312" ns1:y="138" />
+              <ns1:dimensions ns1:height="30" ns1:width="82" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1114" ns1:species="species_196063">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="198" ns1:y="90" />
+              <ns1:dimensions ns1:height="22" ns1:width="58" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1116" ns1:species="species_29366">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="260" ns1:y="181" />
+              <ns1:dimensions ns1:height="30" ns1:width="57" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1118" ns1:species="species_29364">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="105" ns1:y="164" />
+              <ns1:dimensions ns1:height="30" ns1:width="57" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1120" ns1:species="species_70106">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="167" ns1:y="183" />
+              <ns1:dimensions ns1:height="30" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1122" ns1:species="species_5652211">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="418" ns1:y="95" />
+              <ns1:dimensions ns1:height="22" ns1:width="102" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1124" ns1:species="species_73473">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="521" ns1:y="175" />
+              <ns1:dimensions ns1:height="30" ns1:width="49" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1126" ns1:species="species_70106">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="550" ns1:y="97" />
+              <ns1:dimensions ns1:height="30" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_1128" ns1:species="species_29360">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="380" ns1:y="171" />
+              <ns1:dimensions ns1:height="30" ns1:width="49" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2036" ns1:species="species_29356">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1128" ns1:y="107" />
+              <ns1:dimensions ns1:height="30" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2037" ns1:species="species_6799497">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1328" ns1:y="153" />
+              <ns1:dimensions ns1:height="30" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2038" ns1:species="species_71689">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1185" ns1:y="92" />
+              <ns1:dimensions ns1:height="37" ns1:width="73" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2040" ns1:species="species_70106">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1295" ns1:y="196" />
+              <ns1:dimensions ns1:height="30" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2042" ns1:species="species_73473">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1218" ns1:y="199" />
+              <ns1:dimensions ns1:height="30" ns1:width="49" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2044" ns1:species="species_29360">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1136" ns1:y="201" />
+              <ns1:dimensions ns1:height="27" ns1:width="44" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2106" ns1:species="species_113592">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1368" ns1:y="199" />
+              <ns1:dimensions ns1:height="30" ns1:width="40" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2108" ns1:species="species_6799493">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1564" ns1:y="153" />
+              <ns1:dimensions ns1:height="30" ns1:width="58" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2109" ns1:species="species_6799244">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1430" ns1:y="103" />
+              <ns1:dimensions ns1:height="22" ns1:width="56" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2111" ns1:species="species_70106">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1520" ns1:y="118" />
+              <ns1:dimensions ns1:height="30" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2112" ns1:species="species_29804">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="733" ns1:y="233" />
+              <ns1:dimensions ns1:height="30" ns1:width="35" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2133" ns1:species="species_9832975">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="573" ns1:y="135" />
+              <ns1:dimensions ns1:height="36" ns1:width="69" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2136" ns1:species="species_9832977">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="646" ns1:y="135" />
+              <ns1:dimensions ns1:height="33" ns1:width="72" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2137" ns1:species="species_113592">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="688" ns1:y="182" />
+              <ns1:dimensions ns1:height="31" ns1:width="40" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2144" ns1:species="species_9832976">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="858" ns1:y="128" />
+              <ns1:dimensions ns1:height="52" ns1:width="79" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2145" ns1:species="species_29370">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="805" ns1:y="184" />
+              <ns1:dimensions ns1:height="31" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2156" ns1:species="species_70106">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="863" ns1:y="190" />
+              <ns1:dimensions ns1:height="30" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+          <ns1:speciesGlyph ns1:id="layout_2157" ns1:species="species_29370">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1502" ns1:y="201" />
+              <ns1:dimensions ns1:height="31" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:speciesGlyph>
+        </ns1:listOfSpeciesGlyphs>
+        <ns1:listOfReactionGlyphs>
+          <ns1:reactionGlyph ns1:id="layout_422" ns1:reaction="reaction_70333">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="767" ns1:y="147" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="743" ns1:y="153" />
+                  <ns1:end ns1:x="773" ns1:y="153" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="773" ns1:y="153" />
+                  <ns1:end ns1:x="800" ns1:y="153" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_substrate_0" ns1:speciesGlyph="layout_2137">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="743" ns1:y="153" />
+                      <ns1:end ns1:x="720" ns1:y="179" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_substrate_1" ns1:speciesGlyph="layout_2136">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="743" ns1:y="153" />
+                      <ns1:end ns1:x="721" ns1:y="152" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_product_0" ns1:speciesGlyph="layout_2144">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="800" ns1:y="153" />
+                      <ns1:end ns1:x="855" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_product_1" ns1:speciesGlyph="layout_2145">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="800" ns1:y="153" />
+                      <ns1:end ns1:x="816" ns1:y="181" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_product_2" ns1:speciesGlyph="layout_2156">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="800" ns1:y="153" />
+                      <ns1:end ns1:x="860" ns1:y="194" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_modifier_0" ns1:speciesGlyph="layout_925">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="772" ns1:y="116" />
+                      <ns1:end ns1:x="773" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_activator_0" ns1:speciesGlyph="layout_2112">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="753" ns1:y="230" />
+                      <ns1:end ns1:x="773" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_422_inhibitor_0" ns1:speciesGlyph="layout_90">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="792" ns1:y="233" />
+                      <ns1:end ns1:x="773" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_431" ns1:reaction="reaction_70342">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="971" ns1:y="147" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="958" ns1:y="153" />
+                  <ns1:end ns1:x="977" ns1:y="153" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="977" ns1:y="153" />
+                  <ns1:end ns1:x="1017" ns1:y="153" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_431_substrate_0" ns1:speciesGlyph="layout_2144">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="958" ns1:y="153" />
+                      <ns1:end ns1:x="940" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_431_product_0" ns1:speciesGlyph="layout_108">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1017" ns1:y="153" />
+                      <ns1:end ns1:x="1047" ns1:y="114" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_431_product_1" ns1:speciesGlyph="layout_432">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1017" ns1:y="153" />
+                      <ns1:end ns1:x="1078" ns1:y="164" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_431_modifier_0" ns1:speciesGlyph="layout_560">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="975" ns1:y="125" />
+                      <ns1:end ns1:x="977" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_433" ns1:reaction="reaction_70349">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1152" ns1:y="262" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1097" ns1:y="268" />
+                  <ns1:end ns1:x="1158" ns1:y="268" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1158" ns1:y="268" />
+                  <ns1:end ns1:x="1229" ns1:y="268" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_433_substrate_0" ns1:speciesGlyph="layout_434">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1097" ns1:y="268" />
+                      <ns1:end ns1:x="1078" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_433_substrate_1" ns1:speciesGlyph="layout_432">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1097" ns1:y="268" />
+                      <ns1:end ns1:x="1097" ns1:y="186" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_433_product_0" ns1:speciesGlyph="layout_109">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1229" ns1:y="268" />
+                      <ns1:end ns1:x="1295" ns1:y="268" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_433_product_1" ns1:speciesGlyph="layout_435">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1229" ns1:y="268" />
+                      <ns1:end ns1:x="1254" ns1:y="286" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_433_modifier_0" ns1:speciesGlyph="layout_1111">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1158" ns1:y="305" />
+                      <ns1:end ns1:x="1158" ns1:y="268" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_1112" ns1:reaction="reaction_5652172">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="223" ns1:y="143" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="194" ns1:y="148" />
+                  <ns1:end ns1:x="229" ns1:y="149" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="229" ns1:y="149" />
+                  <ns1:end ns1:x="270" ns1:y="150" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1112_substrate_0" ns1:speciesGlyph="layout_365">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="194" ns1:y="148" />
+                      <ns1:end ns1:x="109" ns1:y="148" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1112_substrate_1" ns1:speciesGlyph="layout_1118">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="194" ns1:y="148" />
+                      <ns1:end ns1:x="165" ns1:y="164" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1112_substrate_2" ns1:speciesGlyph="layout_1120">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="194" ns1:y="148" />
+                      <ns1:end ns1:x="186" ns1:y="180" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1112_product_0" ns1:speciesGlyph="layout_1113">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="270" ns1:y="150" />
+                      <ns1:end ns1:x="309" ns1:y="151" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1112_product_1" ns1:speciesGlyph="layout_1116">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="270" ns1:y="150" />
+                      <ns1:end ns1:x="282" ns1:y="178" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1112_modifier_0" ns1:speciesGlyph="layout_1114">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="227" ns1:y="115" />
+                      <ns1:end ns1:x="229" ns1:y="149" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_1121" ns1:reaction="reaction_5652195">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="466" ns1:y="146" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="438" ns1:y="153" />
+                  <ns1:end ns1:x="472" ns1:y="152" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="472" ns1:y="152" />
+                  <ns1:end ns1:x="507" ns1:y="152" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1121_substrate_0" ns1:speciesGlyph="layout_1113">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="438" ns1:y="153" />
+                      <ns1:end ns1:x="397" ns1:y="153" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1121_substrate_1" ns1:speciesGlyph="layout_1128">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="438" ns1:y="153" />
+                      <ns1:end ns1:x="419" ns1:y="168" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1121_product_0" ns1:speciesGlyph="layout_1124">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="507" ns1:y="152" />
+                      <ns1:end ns1:x="530" ns1:y="172" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1121_product_1" ns1:speciesGlyph="layout_2133">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="507" ns1:y="152" />
+                      <ns1:end ns1:x="570" ns1:y="152" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1121_product_2" ns1:speciesGlyph="layout_1126">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="507" ns1:y="152" />
+                      <ns1:end ns1:x="547" ns1:y="123" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_1121_modifier_0" ns1:speciesGlyph="layout_1122">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="469" ns1:y="120" />
+                      <ns1:end ns1:x="472" ns1:y="152" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_2035" ns1:reaction="reaction_6813749">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1216" ns1:y="164" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1173" ns1:y="170" />
+                  <ns1:end ns1:x="1222" ns1:y="170" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1222" ns1:y="170" />
+                  <ns1:end ns1:x="1266" ns1:y="170" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_substrate_0" ns1:speciesGlyph="layout_2036">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1173" ns1:y="170" />
+                      <ns1:end ns1:x="1156" ns1:y="140" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_substrate_1" ns1:speciesGlyph="layout_432">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1173" ns1:y="170" />
+                      <ns1:end ns1:x="1117" ns1:y="168" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_substrate_2" ns1:speciesGlyph="layout_2044">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1173" ns1:y="170" />
+                      <ns1:end ns1:x="1162" ns1:y="198" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_product_0" ns1:speciesGlyph="layout_2037">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1266" ns1:y="170" />
+                      <ns1:end ns1:x="1325" ns1:y="168" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_product_1" ns1:speciesGlyph="layout_2040">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1266" ns1:y="170" />
+                      <ns1:end ns1:x="1292" ns1:y="195" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_product_2" ns1:speciesGlyph="layout_2042">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1266" ns1:y="170" />
+                      <ns1:end ns1:x="1250" ns1:y="196" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2035_modifier_0" ns1:speciesGlyph="layout_2038">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1221" ns1:y="132" />
+                      <ns1:end ns1:x="1222" ns1:y="170" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+          <ns1:reactionGlyph ns1:id="layout_2105" ns1:reaction="reaction_6799495">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1455" ns1:y="161" />
+              <ns1:dimensions ns1:height="12" ns1:width="12" />
+            </ns1:boundingBox>
+            <ns1:curve>
+              <ns1:listOfCurveSegments>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1415" ns1:y="167" />
+                  <ns1:end ns1:x="1461" ns1:y="167" />
+                </ns1:curveSegment>
+                <ns1:curveSegment xsi:type="LineSegment">
+                  <ns1:start ns1:x="1461" ns1:y="167" />
+                  <ns1:end ns1:x="1501" ns1:y="168" />
+                </ns1:curveSegment>
+              </ns1:listOfCurveSegments>
+            </ns1:curve>
+            <ns1:listOfSpeciesReferenceGlyphs>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2105_substrate_0" ns1:speciesGlyph="layout_2106">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1415" ns1:y="167" />
+                      <ns1:end ns1:x="1396" ns1:y="196" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2105_substrate_1" ns1:speciesGlyph="layout_2037">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1415" ns1:y="167" />
+                      <ns1:end ns1:x="1374" ns1:y="167" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2105_product_0" ns1:speciesGlyph="layout_2157">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1501" ns1:y="168" />
+                      <ns1:end ns1:x="1515" ns1:y="198" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2105_product_1" ns1:speciesGlyph="layout_2108">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1501" ns1:y="168" />
+                      <ns1:end ns1:x="1561" ns1:y="168" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2105_product_2" ns1:speciesGlyph="layout_2111">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1501" ns1:y="168" />
+                      <ns1:end ns1:x="1521" ns1:y="151" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+              <ns1:speciesReferenceGlyph ns1:id="layout_2105_modifier_0" ns1:speciesGlyph="layout_2109">
+                <ns1:curve>
+                  <ns1:listOfCurveSegments>
+                    <ns1:curveSegment xsi:type="LineSegment">
+                      <ns1:start ns1:x="1458" ns1:y="128" />
+                      <ns1:end ns1:x="1461" ns1:y="167" />
+                    </ns1:curveSegment>
+                  </ns1:listOfCurveSegments>
+                </ns1:curve>
+              </ns1:speciesReferenceGlyph>
+            </ns1:listOfSpeciesReferenceGlyphs>
+          </ns1:reactionGlyph>
+        </ns1:listOfReactionGlyphs>
+        <ns1:listOfTextGlyphs>
+          <ns1:textGlyph ns1:graphicalObject="layout_7" ns1:id="text_layout_7" ns1:text="cytosol">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="92" ns1:y="291" />
+              <ns1:dimensions ns1:height="33" ns1:width="64" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_90" ns1:id="text_layout_90" ns1:text="ADP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="780" ns1:y="240" />
+              <ns1:dimensions ns1:height="21" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_108" ns1:id="text_layout_108" ns1:text="DHAP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1037" ns1:y="85" />
+              <ns1:dimensions ns1:height="21" ns1:width="42" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_109" ns1:id="text_layout_109" ns1:text="GA3P">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1302" ns1:y="257" />
+              <ns1:dimensions ns1:height="21" ns1:width="41" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_365" ns1:id="text_layout_365" ns1:text="Glc">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="74" ns1:y="137" />
+              <ns1:dimensions ns1:height="21" ns1:width="27" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_432" ns1:id="text_layout_432" ns1:text="GA">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1085" ns1:y="157" />
+              <ns1:dimensions ns1:height="21" ns1:width="25" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_434" ns1:id="text_layout_434" ns1:text="ATP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1051" ns1:y="293" />
+              <ns1:dimensions ns1:height="21" ns1:width="31" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_435" ns1:id="text_layout_435" ns1:text="ADP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1256" ns1:y="293" />
+              <ns1:dimensions ns1:height="21" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_560" ns1:id="text_layout_560" ns1:text="ALDOB tetramer">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="944" ns1:y="87" />
+              <ns1:dimensions ns1:height="35" ns1:width="63" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_925" ns1:id="text_layout_925" ns1:text="KHK dimer">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="737" ns1:y="92" />
+              <ns1:dimensions ns1:height="21" ns1:width="70" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1111" ns1:id="text_layout_1111" ns1:text="TKFC:2Mg2+ dimer">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1113" ns1:y="308" />
+              <ns1:dimensions ns1:height="35" ns1:width="89" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1113" ns1:id="text_layout_1113" ns1:text="D-sorbitol">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="319" ns1:y="142" />
+              <ns1:dimensions ns1:height="21" ns1:width="68" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1114" ns1:id="text_layout_1114" ns1:text="AKR1B1">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="199" ns1:y="90" />
+              <ns1:dimensions ns1:height="21" ns1:width="55" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1116" ns1:id="text_layout_1116" ns1:text="NADP+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="262" ns1:y="185" />
+              <ns1:dimensions ns1:height="21" ns1:width="52" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1118" ns1:id="text_layout_1118" ns1:text="NADPH">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="108" ns1:y="168" />
+              <ns1:dimensions ns1:height="21" ns1:width="51" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1120" ns1:id="text_layout_1120" ns1:text="H+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="170" ns1:y="187" />
+              <ns1:dimensions ns1:height="21" ns1:width="27" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1122" ns1:id="text_layout_1122" ns1:text="SORD tetramer">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="418" ns1:y="96" />
+              <ns1:dimensions ns1:height="21" ns1:width="101" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1124" ns1:id="text_layout_1124" ns1:text="NADH">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="524" ns1:y="179" />
+              <ns1:dimensions ns1:height="21" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1126" ns1:id="text_layout_1126" ns1:text="H+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="553" ns1:y="101" />
+              <ns1:dimensions ns1:height="21" ns1:width="27" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_1128" ns1:id="text_layout_1128" ns1:text="NAD+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="382" ns1:y="175" />
+              <ns1:dimensions ns1:height="21" ns1:width="44" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2036" ns1:id="text_layout_2036" ns1:text="H2O">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1132" ns1:y="111" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2037" ns1:id="text_layout_2037" ns1:text="DGA">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1332" ns1:y="157" />
+              <ns1:dimensions ns1:height="21" ns1:width="34" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2038" ns1:id="text_layout_2038" ns1:text="ALDH1A1 tetramer">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1187" ns1:y="94" />
+              <ns1:dimensions ns1:height="35" ns1:width="68" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2040" ns1:id="text_layout_2040" ns1:text="H+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1298" ns1:y="200" />
+              <ns1:dimensions ns1:height="21" ns1:width="27" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2042" ns1:id="text_layout_2042" ns1:text="NADH">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1221" ns1:y="203" />
+              <ns1:dimensions ns1:height="21" ns1:width="43" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2044" ns1:id="text_layout_2044" ns1:text="NAD+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1136" ns1:y="204" />
+              <ns1:dimensions ns1:height="21" ns1:width="44" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2106" ns1:id="text_layout_2106" ns1:text="ATP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1372" ns1:y="203" />
+              <ns1:dimensions ns1:height="21" ns1:width="31" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2108" ns1:id="text_layout_2108" ns1:text="3PDGA">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1568" ns1:y="157" />
+              <ns1:dimensions ns1:height="21" ns1:width="50" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2109" ns1:id="text_layout_2109" ns1:text="GLYCTK">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1432" ns1:y="103" />
+              <ns1:dimensions ns1:height="21" ns1:width="52" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2111" ns1:id="text_layout_2111" ns1:text="H+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1523" ns1:y="122" />
+              <ns1:dimensions ns1:height="21" ns1:width="27" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2112" ns1:id="text_layout_2112" ns1:text="K+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="738" ns1:y="237" />
+              <ns1:dimensions ns1:height="21" ns1:width="25" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2133" ns1:id="text_layout_2133" ns1:text="keto-D-Fru">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="581" ns1:y="135" />
+              <ns1:dimensions ns1:height="35" ns1:width="53" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2136" ns1:id="text_layout_2136" ns1:text="beta-D-Fru">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="655" ns1:y="134" />
+              <ns1:dimensions ns1:height="35" ns1:width="54" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2137" ns1:id="text_layout_2137" ns1:text="ATP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="692" ns1:y="187" />
+              <ns1:dimensions ns1:height="21" ns1:width="31" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2144" ns1:id="text_layout_2144" ns1:text="beta-D-Fru 1-P">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="858" ns1:y="136" />
+              <ns1:dimensions ns1:height="35" ns1:width="78" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2145" ns1:id="text_layout_2145" ns1:text="ADP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="809" ns1:y="189" />
+              <ns1:dimensions ns1:height="21" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2156" ns1:id="text_layout_2156" ns1:text="H+">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="866" ns1:y="194" />
+              <ns1:dimensions ns1:height="21" ns1:width="27" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+          <ns1:textGlyph ns1:graphicalObject="layout_2157" ns1:id="text_layout_2157" ns1:text="ADP">
+            <ns1:boundingBox>
+              <ns1:position ns1:x="1506" ns1:y="206" />
+              <ns1:dimensions ns1:height="21" ns1:width="33" />
+            </ns1:boundingBox>
+          </ns1:textGlyph>
+        </ns1:listOfTextGlyphs>
+      </ns1:layout>
+    </ns1:listOfLayouts>
+    <listOfCompartments>
+      <compartment constant="true" id="compartment_70101" metaid="metaid_2" name="cytosol" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_2">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005829" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_9832976" metaid="metaid_1" name="beta-D-Fru 1-P [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_1">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:138881" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-9832976" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_9832975" metaid="metaid_3" name="keto-D-Fru [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_3">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48095" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-9832975" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29360" metaid="metaid_4" name="NAD+ [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_4">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57540" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29360" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_6799493" metaid="metaid_5" name="3PDGA [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_5">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58272" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-6799493" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_6799497" metaid="metaid_6" name="DGA [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_6">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16659" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-6799497" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_70113" metaid="metaid_7" name="Glc [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_7">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4167" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-70113" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_9832977" metaid="metaid_8" name="beta-D-Fru [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_8">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28645" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-9832977" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_113592" metaid="metaid_9" name="ATP [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_9">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30616" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-113592" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_70340" metaid="metaid_10" name="ALDOB tetramer [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (4xP05062). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_10">
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11679716" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70340" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P05062" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-70340" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-PFA-70340" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_5652070" metaid="metaid_11" name="TKFC:2Mg2+ dimer [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (4x18420, 2xQ3LXA3). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_11">
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:24569995" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652070" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18420" />
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:Q3LXA3" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-5652070" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-5652070" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29356" metaid="metaid_12" name="H2O [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_12">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29356" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_73473" metaid="metaid_13" name="NADH [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_13">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57945" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-73473" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29804" metaid="metaid_14" name="K+ [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_14">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29103" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29804" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_70106" metaid="metaid_15" name="H+ [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_15">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15378" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-70106" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_71689" metaid="metaid_16" name="ALDH1A1 tetramer [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (4xP00352). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_16">
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:224930" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-71689" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P00352" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-71689" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-71689" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29578" metaid="metaid_17" name="GA3P [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_17">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:59776" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29578" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_196063" metaid="metaid_18" name="AKR1B1 [cytosol]" sboTerm="SBO:0000252">
+        <notes>
+          <html:p>Derived from a Reactome EntityWithAccessionedSequence. This is a protein</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_18">
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:8281941" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P15121" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-196063" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-196063-2" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-196063-3" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-196063-4" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-196063-5" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-196063-2" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-196063-3" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-196063-4" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-196063" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-196063-2" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-196063-3" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-196063-4" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-196063-5" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-196063-6" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_5652211" metaid="metaid_19" name="SORD tetramer [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (4x29105, 4xQ00796). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_19">
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:3365415" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12962626" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652211" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29105" />
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:Q00796" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-5652211" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-5652211" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29370" metaid="metaid_20" name="ADP [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_20">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:456216" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29370" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_30393" metaid="metaid_21" name="GA [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_21">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17378" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-30393" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29366" metaid="metaid_22" name="NADP+ [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_22">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58349" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29366" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_3006523" metaid="metaid_23" name="KHK dimer [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <html:p>Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (2xP50053). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_23">
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19237742" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-3006523" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:P50053" />
+                </rdf:Bag>
+              </ns7:hasPart>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-3006523" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-3006523" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-3006523" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-3006523" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_75970" metaid="metaid_24" name="DHAP [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_24">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57642" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-75970" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29364" metaid="metaid_25" name="NADPH [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_25">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57783" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29364" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_6799244" metaid="metaid_26" name="GLYCTK [cytosol]" sboTerm="SBO:0000252">
+        <notes>
+          <html:p>Derived from a Reactome EntityWithAccessionedSequence. This is a protein</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_26">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/uniprot:Q8IVS8" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799244" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-6799244" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-6799244" />
+                </rdf:Bag>
+              </ns7:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_5652213" metaid="metaid_27" name="D-sorbitol [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <html:p>Derived from a Reactome SimpleEntity. This is a small compound</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_27">
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17924" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-5652213" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_5652172" metaid="metaid_28" name="AKR1B1 reduces Glc to D-sorbitol" reversible="false">
+        <notes>
+          <html:p>Cytosolic AKR1B1 (aldose reductase) catalyzes the reaction of glucose (Glc) and NADPH + H+ to form D-sorbitol and NADP+. This reaction was first described by Hers (1960) in sheep seminal vesicles; the human enzyme was identified by Nishimura et al. (1990) and is a potential target for treatment of diabetic neuropathy (Oates, 2008). The active enzyme is a monomer (Ruiz et al. 2004) whose amino-terminal methionine residue has been removed (Jacquinod et al. 1993). Under physiological conditions, formation of D-sorbitol is strongly favored (Grimshaw 1992).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_28">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Ribeiro</ns5:Family>
+                      <ns5:Given>Joao Meireles</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Cameselle</ns5:Family>
+                      <ns5:Given>Jose Carlos</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2014-11-29T03:53:29Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T14:36:02Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-08-28T02:27:24Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2014-11-29T03:53:29Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652172" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:1420136" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:14401390" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:8281941" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:2112546" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:18220710" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:15272156" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652172" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004032" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:1.1.1.21" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_5652172_input_70113" sboTerm="SBO:0000010" species="species_70113" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5652172_input_29364" sboTerm="SBO:0000010" species="species_29364" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5652172_input_70106" sboTerm="SBO:0000010" species="species_70106" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_5652172_output_5652213" sboTerm="SBO:0000011" species="species_5652213" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5652172_output_29366" sboTerm="SBO:0000011" species="species_29366" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_5652172_catalyst_196063" sboTerm="SBO:0000013" species="species_196063" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_5652172</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_196063</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_196063</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_70113</ns9:ci><ns9:ci>species_29364</ns9:ci><ns9:ci>species_70106</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_5652195" metaid="metaid_29" name="SORD oxidizes D-sorbitol to Fru" reversible="false">
+        <notes>
+          <html:p>Cytosolic SORD (sorbitol dehydrogenase) catalyzes the reaction of D-sorbitol and NAD+ to form fructose (Fru) and NADH + H+. This reaction was first described by Hers (1960) in sheep seminal vesicles; the human enzyme was identified by O'Brien et al. (1983). The active enzyme is a tetramer with four associated Zn2+ ions (Pauly et al. 2003) whose amino-terminal methionine residue has been removed (Karlsson et al. 1989).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_29">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Ribeiro</ns5:Family>
+                      <ns5:Given>Joao Meireles</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Cameselle</ns5:Family>
+                      <ns5:Given>Jose Carlos</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2014-11-29T03:53:29Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T14:36:02Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-08-28T02:27:24Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2014-11-29T03:53:29Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652195" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:14401391" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:2691249" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:6870831" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12962626" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-5652195" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0003939" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:1.1.1.14" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_5652195_input_29360" sboTerm="SBO:0000010" species="species_29360" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5652195_input_5652213" sboTerm="SBO:0000010" species="species_5652213" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_5652195_output_73473" sboTerm="SBO:0000011" species="species_73473" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5652195_output_9832975" sboTerm="SBO:0000011" species="species_9832975" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_5652195_output_70106" sboTerm="SBO:0000011" species="species_70106" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_5652195_catalyst_5652211" sboTerm="SBO:0000013" species="species_5652211" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_5652195</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_5652211</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_5652211</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_29360</ns9:ci><ns9:ci>species_5652213</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_70333" metaid="metaid_30" name="KHK dimer phosphorylates Fru to Fru 1-P" reversible="false">
+        <notes>
+          <html:p>Cytosolic ketohexokinase (KHK, also known as fructokinase) catalyzes the reaction of D-fructose (Fru) and ATP to form D-fructose 1-phosphate (Fru 1-P) and ADP. Two isoforms of the enzyme, A and C, are encoded by alternatively spliced forms of the gene; both form catalytically active dimers. The C isoform is predominant in liver and kidney tissues, has high affinity for fructose, and is probably responsible for the bulk of fructose phosphorylation in vivo (Asipu et al. 2003; Trinh et al. 2009). The A isoform is found in lower levels in many other tissues and may serve a role in fructose metabolism outside of liver and kidney (Funari et al. 2005). The physiological role of KHK has been established from metabolic and DNA sequencing studies of patients with essential fructosuria (Bonthron et al. 1994) and in mouse models for this disease (Diggle et al. 2010; Ishimoto et al. 2012).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_30">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Ribeiro</ns5:Family>
+                      <ns5:Given>Joao Meireles</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Cameselle</ns5:Family>
+                      <ns5:Given>Jose Carlos</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T13:12:44Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-08-28T02:27:24Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2010-01-25T04:55:35Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-01-29T23:11:05Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70333" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12941785" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:7833921" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:20841500" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16266770" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:22371574" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19237742" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70333" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004454" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:2.7.1.3" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_70333_input_9832977" sboTerm="SBO:0000010" species="species_9832977" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_70333_input_113592" sboTerm="SBO:0000010" species="species_113592" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_70333_output_9832976" sboTerm="SBO:0000011" species="species_9832976" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_70333_output_70106" sboTerm="SBO:0000011" species="species_70106" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_70333_output_29370" sboTerm="SBO:0000011" species="species_29370" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_70333_catalyst_3006523" sboTerm="SBO:0000013" species="species_3006523" />
+          <modifierSpeciesReference id="modifierspeciesreference_70333_positiveregulator_29804" sboTerm="SBO:0000459" species="species_29804">
+            <notes>
+              <html:p>This describes an Event/CatalystActivity that is positively regulated by the Regulator (e.g., allosteric activation)</html:p>
+            </notes>
+          </modifierSpeciesReference>
+          <modifierSpeciesReference id="modifierspeciesreference_70333_negativeregulator_29370" sboTerm="SBO:0000020" species="species_29370">
+            <notes>
+              <html:p>This describes an Event/CatalystActivity that is negatively regulated by the Regulator (e.g., allosteric inhibition, competitive inhibition</html:p>
+            </notes>
+          </modifierSpeciesReference>
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_70333</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_3006523</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_3006523</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_29804</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_29804</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_29370</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_9832977</ns9:ci><ns9:ci>species_113592</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_6813749" metaid="metaid_31" name="ALDH1A1 oxidises GA to DGA" reversible="false">
+        <notes>
+          <html:p>Retinal dehydrogenase 1 (ALDH1A1 tetramer) is a cytosolic aldehyde dehydrogenase that can oxidise glyceraldehyde (GA) to D-glycerate (DGA) (Yoval-Sanchez et al. 2013). DGA is a metabolite in a minor pathway of fructose catabolism and serine catabolism.</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_31">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-11-24T18:27:57Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T14:36:02Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-11-24T18:27:57Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6813749" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:23444097" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6813749" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004029" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:1.2.1.3" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_6813749_input_29356" sboTerm="SBO:0000010" species="species_29356" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6813749_input_29360" sboTerm="SBO:0000010" species="species_29360" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6813749_input_30393" sboTerm="SBO:0000010" species="species_30393" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_6813749_output_73473" sboTerm="SBO:0000011" species="species_73473" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6813749_output_70106" sboTerm="SBO:0000011" species="species_70106" stoichiometry="2" />
+          <speciesReference constant="true" id="speciesreference_6813749_output_6799497" sboTerm="SBO:0000011" species="species_6799497" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_6813749_catalyst_71689" sboTerm="SBO:0000013" species="species_71689" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_6813749</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_71689</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_71689</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_29356</ns9:ci><ns9:ci>species_29360</ns9:ci><ns9:ci>species_30393</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_70342" metaid="metaid_32" name="ALDOB tetramer cleaves Fru-1-P to GA and DHAP" reversible="false">
+        <notes>
+          <html:p>Cytosolic aldolase B (ALDOB) catalyzes the reaction of D-fructose 1-phosphate (Fru 1-P) to form dihydroxyacetone phosphate (DHAP) and D-glyceraldehyde (GA) (Hers and Kusaka 1953; Schapira 1975). The active form of the enzyme is a tetramer (Dalby et al. 2001). Deficiencies in the enzyme are associated with hereditary fructose intolerance in vivo (e.g., Tolan 1995; Ali et al. 1998).ALDOB is the same aldolase isoform that catalyzes the reversible cleavage of fructose-1,6-bisphosphate in glycolysis. This isoform, found in liver, kidney, and intestine, is approximately equally active with fructose 1 phosphate and fructose 1,6 bisphosphate as substrates at saturating concentrations, while the muscle and brain isoforms (ALDOA and ALDOC, respectively), have little activity with fructose-1-phosphate (Lebherz and Rutter 1969; Penhoet et el. 1969).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_32">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Ribeiro</ns5:Family>
+                      <ns5:Given>Joao Meireles</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Cameselle</ns5:Family>
+                      <ns5:Given>Jose Carlos</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T15:17:35Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-08-28T02:27:24Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2010-01-25T04:55:35Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-01-29T23:11:05Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70342" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:9610797" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11679716" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:13093749" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:5777313" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:5353106" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:805723" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:8535439" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70342" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0061609" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_70342_input_9832976" sboTerm="SBO:0000010" species="species_9832976" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_70342_output_75970" sboTerm="SBO:0000011" species="species_75970" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_70342_output_30393" sboTerm="SBO:0000011" species="species_30393" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_70342_catalyst_70340" sboTerm="SBO:0000013" species="species_70340" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_70342</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_70340</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_70340</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_9832976</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_6799495" metaid="metaid_33" name="GLYCTK phosphorylates DGA to 3PDGA" reversible="false">
+        <notes>
+          <html:p>D-glyceric acid (DGA) is an intermediate of serine catabolism and of a minor pathway of fructose metabolism. The only known fate of DGA is phosphorylation to 3-phospho-D-glyceric acid (3PDGA) by cytosolic glycerate kinase (GLYCTK) (Yu et al. 2006). Defects in GLYCTK can cause D-glyceric aciduria (D-GA; MIM:220120), a rare inborn error of serine and fructose metabolism where DGA is excreted in large amounts in the urine. A variable phenotype is observed, ranging from severe mental retardation and death to milder speech delays and normal development (Van Schaftingen 1989, Sass et al. 2010).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_33">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Jassal</ns5:Family>
+                      <ns5:Given>Bijay</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:created rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-09-25T00:02:25Z</ns6:W3CDTF>
+              </ns6:created>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T11:11:57Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-09-25T00:02:25Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799495" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16753811" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:2537226" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:20949620" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-6799495" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0008887" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:2.7.1.31" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_6799495_input_113592" sboTerm="SBO:0000010" species="species_113592" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6799495_input_6799497" sboTerm="SBO:0000010" species="species_6799497" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_6799495_output_70106" sboTerm="SBO:0000011" species="species_70106" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6799495_output_6799493" sboTerm="SBO:0000011" species="species_6799493" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_6799495_output_29370" sboTerm="SBO:0000011" species="species_29370" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_6799495_catalyst_6799244" sboTerm="SBO:0000013" species="species_6799244" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_6799495</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_6799244</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_6799244</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_113592</ns9:ci><ns9:ci>species_6799497</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_70349" metaid="metaid_34" name="DAK dimer phosphorylates D-glyceraldehyde to form D-glyceraldehyde 3-phosphate" reversible="false">
+        <notes>
+          <html:p>Cytosolic dihydroxyacetone kinase (DAK) catalyzes the reaction of ATP and D-glyceraldehyde (GA) to form ADP and D-glyceraldehyde 3-phosphate (GA3P). This reaction was originally characterized in studies of guinea pig liver and human erythrocytes (Hers and Kusaka 1953; Beutler and Guinto 1973). The human enzyme has been cloned and studied (Cabezas et al. 2005; Rodrigues et al. 2014). DAK/TKFC also catalyzes the phosphorylation of dihydroxyacetone (DHA) to dihydroxyacetone phosphate (DHAP), not a necessary step in fructose catabolism, but possibly functional on exogenous DHA. Triokinase activities on GA and DHA require homodimeric enzyme formed by two-domain subunits, where triose binds to one subunit and ATP to the other, each in a different domain.DAK/TKFC is a bifunctional enzyme which, besides the ATP/Mg-dependent phosphorylation of GA and DHA, also catalyses, in presence of Mn2+, a unisubstrate reaction splitting flavin-adenine dinucleotide (FAD) into riboflavin cyclic 4',5'-phosphate (cyclic FMN) and AMP (Cabezas et al. 2005; Rodrigues et al. 2014).In addition, DAK/TKFC protein binds to MDA5 and acts as a negative regulator of MDA5-mediated induction of IFN-alpha/beta pathways (Diao et al. 2007). Potentially related to this TKFC effect are the observations that hepatic DAK/TKFC levels correlate with outcome in chronic hepatitis C patients treated with interferon (Perdomo et al. 2012), and that a DAK/TKFC serum peptide is a predictor of disease severity in hepatitis B patients (Xu et al. 2013).</html:p>
+        </notes>
+        <annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#metaid_34">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Weiser</ns5:Family>
+                      <ns5:Given>Joel</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>OICR</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>D'Eustachio</ns5:Family>
+                      <ns5:Given>Peter</ns5:Given>
+                    </ns5:N>
+                    <ns5:ORG rdf:parseType="Resource">
+                      <ns5:Orgname>NYU School of Medicine, Department of Biochemistry</ns5:Orgname>
+                    </ns5:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Ribeiro</ns5:Family>
+                      <ns5:Given>Joao Meireles</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <ns5:N rdf:parseType="Resource">
+                      <ns5:Family>Cameselle</ns5:Family>
+                      <ns5:Given>Jose Carlos</ns5:Given>
+                    </ns5:N>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2026-03-16T14:36:02Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-08-28T02:27:24Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2010-01-25T04:55:35Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns6:modified rdf:parseType="Resource">
+                <ns6:W3CDTF>2015-01-29T23:11:05Z</ns6:W3CDTF>
+              </ns6:modified>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70349" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:4688871" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16289032" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:13093749" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:22098443" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:24569995" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:24289155" />
+                </rdf:Bag>
+              </ns7:isDescribedBy>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-70349" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0050354" />
+                </rdf:Bag>
+              </ns7:is>
+              <ns7:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:2.7.1.28" />
+                </rdf:Bag>
+              </ns7:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_70349_input_113592" sboTerm="SBO:0000010" species="species_113592" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_70349_input_30393" sboTerm="SBO:0000010" species="species_30393" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_70349_output_29578" sboTerm="SBO:0000011" species="species_29578" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_70349_output_29370" sboTerm="SBO:0000011" species="species_29370" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_70349_catalyst_5652070" sboTerm="SBO:0000013" species="species_5652070" />
+        </listOfModifiers>
+      <kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>lambda_reaction_70349</ns9:ci><ns9:apply><ns9:divide /><ns9:apply><ns9:power /><ns9:ci>species_5652070</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:plus /><ns9:apply><ns9:power /><ns9:cn>0.5</ns9:cn><ns9:cn>10</ns9:cn></ns9:apply><ns9:apply><ns9:power /><ns9:ci>species_5652070</ns9:ci><ns9:cn>10</ns9:cn></ns9:apply></ns9:apply></ns9:apply><ns9:ci>species_113592</ns9:ci><ns9:ci>species_30393</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction>
+    <reaction id="source_29360" reversible="false" fast="false"><listOfProducts><speciesReference species="species_29360" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_29360</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_70113" reversible="false" fast="false"><listOfProducts><speciesReference species="species_70113" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_70113</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_9832977" reversible="false" fast="false"><listOfProducts><speciesReference species="species_9832977" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_9832977</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_113592" reversible="false" fast="false"><listOfProducts><speciesReference species="species_113592" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_113592</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_70340" reversible="false" fast="false"><listOfProducts><speciesReference species="species_70340" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_70340</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_5652070" reversible="false" fast="false"><listOfProducts><speciesReference species="species_5652070" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_5652070</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_29356" reversible="false" fast="false"><listOfProducts><speciesReference species="species_29356" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_29356</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_29804" reversible="false" fast="false"><listOfProducts><speciesReference species="species_29804" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_29804</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_71689" reversible="false" fast="false"><listOfProducts><speciesReference species="species_71689" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_71689</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_196063" reversible="false" fast="false"><listOfProducts><speciesReference species="species_196063" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_196063</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_5652211" reversible="false" fast="false"><listOfProducts><speciesReference species="species_5652211" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_5652211</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_3006523" reversible="false" fast="false"><listOfProducts><speciesReference species="species_3006523" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_3006523</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_29364" reversible="false" fast="false"><listOfProducts><speciesReference species="species_29364" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_29364</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="source_6799244" reversible="false" fast="false"><listOfProducts><speciesReference species="species_6799244" stoichiometry="1" constant="true" /></listOfProducts><kineticLaw><ns9:math><ns9:ci>K_in_6799244</ns9:ci></ns9:math></kineticLaw></reaction><reaction id="sink_9832975" reversible="false" fast="false"><listOfReactants><speciesReference species="species_9832975" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_9832975</ns9:ci><ns9:ci>species_9832975</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_6799493" reversible="false" fast="false"><listOfReactants><speciesReference species="species_6799493" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_6799493</ns9:ci><ns9:ci>species_6799493</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_73473" reversible="false" fast="false"><listOfReactants><speciesReference species="species_73473" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_73473</ns9:ci><ns9:ci>species_73473</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_29578" reversible="false" fast="false"><listOfReactants><speciesReference species="species_29578" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_29578</ns9:ci><ns9:ci>species_29578</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_29366" reversible="false" fast="false"><listOfReactants><speciesReference species="species_29366" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_29366</ns9:ci><ns9:ci>species_29366</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction><reaction id="sink_75970" reversible="false" fast="false"><listOfReactants><speciesReference species="species_75970" stoichiometry="1" constant="true" /></listOfReactants><kineticLaw><ns9:math><ns9:apply><ns9:times /><ns9:ci>K_out_75970</ns9:ci><ns9:ci>species_75970</ns9:ci></ns9:apply></ns9:math></kineticLaw></reaction></listOfReactions>
+  <listOfParameters><parameter id="lambda_reaction_5652172" value="10.0" constant="true" /><parameter id="lambda_reaction_5652195" value="10.0" constant="true" /><parameter id="lambda_reaction_70333" value="10.0" constant="true" /><parameter id="lambda_reaction_6813749" value="10.0" constant="true" /><parameter id="lambda_reaction_70342" value="10.0" constant="true" /><parameter id="lambda_reaction_6799495" value="10.0" constant="true" /><parameter id="lambda_reaction_70349" value="10.0" constant="true" /><parameter id="K_in_29360" value="10.0" constant="true" /><parameter id="K_in_70113" value="10.0" constant="true" /><parameter id="K_in_9832977" value="10.0" constant="true" /><parameter id="K_in_113592" value="10.0" constant="true" /><parameter id="K_in_70340" value="10.0" constant="true" /><parameter id="K_in_5652070" value="10.0" constant="true" /><parameter id="K_in_29356" value="10.0" constant="true" /><parameter id="K_in_29804" value="10.0" constant="true" /><parameter id="K_in_71689" value="10.0" constant="true" /><parameter id="K_in_196063" value="10.0" constant="true" /><parameter id="K_in_5652211" value="10.0" constant="true" /><parameter id="K_in_3006523" value="10.0" constant="true" /><parameter id="K_in_29364" value="10.0" constant="true" /><parameter id="K_in_6799244" value="10.0" constant="true" /><parameter id="K_out_9832975" value="1.0" constant="true" /><parameter id="K_out_6799493" value="1.0" constant="true" /><parameter id="K_out_73473" value="1.0" constant="true" /><parameter id="K_out_29578" value="1.0" constant="true" /><parameter id="K_out_29366" value="1.0" constant="true" /><parameter id="K_out_75970" value="1.0" constant="true" /><parameter id="y_9832976" value="0.0" constant="false" /><parameter id="y2_9832976" value="0.0" constant="false" /><parameter id="y_9832975" value="0.0" constant="false" /><parameter id="y2_9832975" value="0.0" constant="false" /><parameter id="y_29360" value="0.0" constant="false" /><parameter id="y2_29360" value="0.0" constant="false" /><parameter id="y_6799493" value="0.0" constant="false" /><parameter id="y2_6799493" value="0.0" constant="false" /><parameter id="y_6799497" value="0.0" constant="false" /><parameter id="y2_6799497" value="0.0" constant="false" /><parameter id="y_70113" value="0.0" constant="false" /><parameter id="y2_70113" value="0.0" constant="false" /><parameter id="y_9832977" value="0.0" constant="false" /><parameter id="y2_9832977" value="0.0" constant="false" /><parameter id="y_113592" value="0.0" constant="false" /><parameter id="y2_113592" value="0.0" constant="false" /><parameter id="y_70340" value="0.0" constant="false" /><parameter id="y2_70340" value="0.0" constant="false" /><parameter id="y_5652070" value="0.0" constant="false" /><parameter id="y2_5652070" value="0.0" constant="false" /><parameter id="y_29356" value="0.0" constant="false" /><parameter id="y2_29356" value="0.0" constant="false" /><parameter id="y_73473" value="0.0" constant="false" /><parameter id="y2_73473" value="0.0" constant="false" /><parameter id="y_29804" value="0.0" constant="false" /><parameter id="y2_29804" value="0.0" constant="false" /><parameter id="y_70106" value="0.0" constant="false" /><parameter id="y2_70106" value="0.0" constant="false" /><parameter id="y_71689" value="0.0" constant="false" /><parameter id="y2_71689" value="0.0" constant="false" /><parameter id="y_29578" value="0.0" constant="false" /><parameter id="y2_29578" value="0.0" constant="false" /><parameter id="y_196063" value="0.0" constant="false" /><parameter id="y2_196063" value="0.0" constant="false" /><parameter id="y_5652211" value="0.0" constant="false" /><parameter id="y2_5652211" value="0.0" constant="false" /><parameter id="y_29370" value="0.0" constant="false" /><parameter id="y2_29370" value="0.0" constant="false" /><parameter id="y_30393" value="0.0" constant="false" /><parameter id="y2_30393" value="0.0" constant="false" /><parameter id="y_29366" value="0.0" constant="false" /><parameter id="y2_29366" value="0.0" constant="false" /><parameter id="y_3006523" value="0.0" constant="false" /><parameter id="y2_3006523" value="0.0" constant="false" /><parameter id="y_75970" value="0.0" constant="false" /><parameter id="y2_75970" value="0.0" constant="false" /><parameter id="y_29364" value="0.0" constant="false" /><parameter id="y2_29364" value="0.0" constant="false" /><parameter id="y_6799244" value="0.0" constant="false" /><parameter id="y2_6799244" value="0.0" constant="false" /><parameter id="y_5652213" value="0.0" constant="false" /><parameter id="y2_5652213" value="0.0" constant="false" /></listOfParameters><listOfRules><rateRule variable="y_9832976"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_9832976</ns9:ci><ns9:ci>y_9832976</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_9832976"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_9832976</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_9832976</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_9832975"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_9832975</ns9:ci><ns9:ci>y_9832975</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_9832975"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_9832975</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_9832975</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29360"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29360</ns9:ci><ns9:ci>y_29360</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29360"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29360</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29360</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799493"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799493</ns9:ci><ns9:ci>y_6799493</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799493"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799493</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799493</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799497"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799497</ns9:ci><ns9:ci>y_6799497</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799497"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799497</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799497</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_70113"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_70113</ns9:ci><ns9:ci>y_70113</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_70113"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_70113</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_70113</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_9832977"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_9832977</ns9:ci><ns9:ci>y_9832977</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_9832977"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_9832977</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_9832977</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_113592"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_113592</ns9:ci><ns9:ci>y_113592</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_113592"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_113592</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_113592</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_70340"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_70340</ns9:ci><ns9:ci>y_70340</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_70340"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_70340</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_70340</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_5652070"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_5652070</ns9:ci><ns9:ci>y_5652070</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_5652070"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_5652070</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_5652070</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29356"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29356</ns9:ci><ns9:ci>y_29356</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29356"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29356</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29356</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_73473"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_73473</ns9:ci><ns9:ci>y_73473</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_73473"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_73473</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_73473</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29804"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29804</ns9:ci><ns9:ci>y_29804</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29804"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29804</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29804</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_70106"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_70106</ns9:ci><ns9:ci>y_70106</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_70106"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_70106</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_70106</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_71689"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_71689</ns9:ci><ns9:ci>y_71689</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_71689"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_71689</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_71689</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29578"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29578</ns9:ci><ns9:ci>y_29578</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29578"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29578</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29578</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_196063"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_196063</ns9:ci><ns9:ci>y_196063</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_196063"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_196063</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_196063</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_5652211"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_5652211</ns9:ci><ns9:ci>y_5652211</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_5652211"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_5652211</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_5652211</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29370"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29370</ns9:ci><ns9:ci>y_29370</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29370"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29370</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29370</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_30393"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_30393</ns9:ci><ns9:ci>y_30393</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_30393"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_30393</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_30393</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29366"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29366</ns9:ci><ns9:ci>y_29366</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29366"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29366</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29366</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_3006523"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_3006523</ns9:ci><ns9:ci>y_3006523</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_3006523"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_3006523</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_3006523</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_75970"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_75970</ns9:ci><ns9:ci>y_75970</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_75970"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_75970</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_75970</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_29364"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_29364</ns9:ci><ns9:ci>y_29364</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_29364"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_29364</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_29364</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_6799244"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_6799244</ns9:ci><ns9:ci>y_6799244</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_6799244"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_6799244</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_6799244</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y_5652213"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:ci>species_5652213</ns9:ci><ns9:ci>y_5652213</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule><rateRule variable="y2_5652213"><ns9:math><ns9:apply><ns9:divide /><ns9:apply><ns9:minus /><ns9:apply><ns9:power /><ns9:ci>species_5652213</ns9:ci><ns9:cn>2</ns9:cn></ns9:apply><ns9:ci>y2_5652213</ns9:ci></ns9:apply><ns9:apply><ns9:plus /><ns9:csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time">time</ns9:csymbol><ns9:cn type="e-notation">1<ns9:sep />-6</ns9:cn></ns9:apply></ns9:apply></ns9:math></rateRule></listOfRules></model>
+</sbml>
