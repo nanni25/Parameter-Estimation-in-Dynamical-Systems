@@ -2,8 +2,8 @@ import numpy as np
 import json
 import roadrunner
 import argparse
+import copy
 from simulation import evaluate_loss
-from visualization import plot_results, plot_timeline
 
 def main():
     parser = argparse.ArgumentParser()
@@ -14,7 +14,10 @@ def main():
     parser.add_argument("--pop_size", type=int, required=True)
     parser.add_argument("--generations", type=int, required=True)
     parser.add_argument("--learning_rate", type=float, required=True)
-    parser.add_argument("--sigma", type=float, required=True)
+    parser.add_argument("--sigma", type=float, required=True)    
+    parser.add_argument("--patience", type=int, default=50, help="Generations to wait for improvement before stopping")
+    parser.add_argument("--min_delta", type=float, default=1e-5, help="Minimum decrease in loss to count as improvement")
+    
     args = parser.parse_args()
 
     np.random.seed(11)
@@ -46,6 +49,10 @@ def main():
     beta1, beta2, adam_epsilon = 0.9, 0.999, 1e-8
     
     history_best_loss, history_mean_loss = [], []
+    
+    best_global_loss = float('inf')
+    best_theta = np.copy(theta)
+    epochs_without_improvement = 0
     
     print(f"Starting for {args.generations} gens. Pop Size: {args.pop_size}")
     
@@ -84,11 +91,24 @@ def main():
         history_best_loss.append(min_loss)
         history_mean_loss.append(mean_loss)
         
+        if min_loss < (best_global_loss - args.min_delta):
+            best_global_loss = min_loss
+            best_theta = np.copy(theta) # Save the best parameters
+            epochs_without_improvement = 0
+        else:
+            epochs_without_improvement += 1
+            
         if (epoch + 1) % 10 == 0:
             print(f"Gen {epoch+1:03d}/{args.generations} | LR: {current_lr:.4f} | Sig: {current_sigma:.4f} | Best Loss: {min_loss:.6f}")
+            
+        if epochs_without_improvement >= args.patience:
+            print(f"\n[!] Early stopping triggered at Gen {epoch+1}!")
+            print(f"[!] No improvement greater than {args.min_delta} for {args.patience} generations.")
+            break
         
     print("\nOptimization Complete:")
-    final_params = 10 ** theta
+    
+    final_params = 10 ** best_theta 
     
     print(f"{'Parameter':<25} | {'Optimized Value'}")
     print("-" * 45)
@@ -109,10 +129,6 @@ def main():
     print("-" * 55)
     for var, target_val, sim_val in zip(MEAN_VARIABLES, target_values, simulated_means):
         print(f"{var:<18} | {target_val:<12.6f} | {sim_val:.6f}")
-
-    plot_results(history_best_loss, history_mean_loss, MEAN_VARIABLES, target_values, simulated_means)
-
-    plot_timeline(final_params, targets, args.model_path, PARAMS_TO_OPTIMIZE, MEAN_VARIABLES, args.sim_time, args.sim_steps)
 
 if __name__ == "__main__":
     main()

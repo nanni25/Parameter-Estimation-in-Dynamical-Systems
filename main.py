@@ -8,7 +8,7 @@ def run_pipeline(args):
     print("  STARTING PIPELINE ")
     print("========================================\n")
 
-    # 1. Setup directories and dynamic file paths
+    # Setup directories and dynamic file paths
     os.makedirs(args.cured_dir, exist_ok=True)
     os.makedirs(args.targets_dir, exist_ok=True) # <-- Creates the Targets folder
     
@@ -43,7 +43,9 @@ def run_pipeline(args):
             "--pop_size", str(args.pop_size),
             "--generations", str(args.generations),
             "--learning_rate", str(args.learning_rate),
-            "--sigma", str(args.sigma)
+            "--sigma", str(args.sigma),
+            "--patience", str(args.patience),
+            "--min_delta", str(args.min_delta)
         ]
         subprocess.run(optimizer_cmd, check=True)
 
@@ -67,8 +69,10 @@ if __name__ == "__main__":
     parser.add_argument("--sim_steps", type=int, default=1000, help="Number of simulation steps.")
     parser.add_argument("--pop_size", type=int, default=100, help="Population size for the optimizer.")
     parser.add_argument("--generations", type=int, default=500, help="Number of optimization generations.")
-    parser.add_argument("--learning_rate", type=float, default=0.035, help="Learning rate.")
-    parser.add_argument("--sigma", type=float, default=0.035, help="Exploration variance (sigma).")
+    parser.add_argument("--learning_rate", type=float, default=0.05, help="Learning rate.")
+    parser.add_argument("--sigma", type=float, default=0.05, help="Exploration variance (sigma).")    
+    parser.add_argument("--patience", type=int, default=50, help="Generations to wait for improvement before stopping.")
+    parser.add_argument("--min_delta", type=float, default=1e-5, help="Minimum decrease in loss to count as improvement.")
     
     args = parser.parse_args()
     run_pipeline(args)
